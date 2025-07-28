@@ -7,8 +7,8 @@ http://develop.sportspiel2026.de/
 ---------------------------------------------------------------------
 > [!IMPORTANT]
 > Produktiv Version:
-> https://github.com/seifriz/dvs-sportspiel2026
-> https://www.sportspiel2026.de/
+> - https://github.com/seifriz/dvs-sportspiel2026
+> - https://www.sportspiel2026.de/
 ---------------------------------------------------------------------
 > [!NOTE]
 > - Das Teaser-Video ist nicht im GitHub Repository "dvs-sportspiel2026"!
