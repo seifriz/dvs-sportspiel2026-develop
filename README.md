@@ -1,5 +1,7 @@
 # dvs-sportspiel2026-develop
 
+# DEVELOP VERSION
+
 Website "https://www.sportspiel2026.de"
 
 Develop Website (intern) "http://develop.sportspiel2026.de/"
