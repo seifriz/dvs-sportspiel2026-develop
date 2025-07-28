@@ -6,7 +6,7 @@ http://develop.sportspiel2026.de/
 
 ---------------------------------------------------------------------
 > [!IMPORTANT]
-> Produktiv Version:
+> Produktiv Version
 > - GitHub: https://github.com/seifriz/dvs-sportspiel2026
 > - Web-Site: https://www.sportspiel2026.de/
 ---------------------------------------------------------------------
