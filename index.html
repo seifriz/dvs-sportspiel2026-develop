@@ -1,13 +1,371 @@
 <!doctype html>
 <html lang="de">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>14. Sportspiel-Symposium der dvs 2026</title>
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/timeline3.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .hero {
+            background: url('images/hero2.jpeg') center center/cover no-repeat;
+            color: white;
+            height: 100%;
+            min-height: 878px;
+            padding: 100px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        .text-overlay {
+            background-color: rgba(78, 109, 149, 0.73);
+            padding: 1.5rem;
+            border-radius: 1rem;
+        }
+
+        .section-padding {
+            padding: 60px 0;
+        }
+
+        .navbar-brand img {
+            height: 45px;
+            margin-right: 10px;
+        }
+    </style>
 </head>
+
 <body>
-Kommt demnächst...
+
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo">14. Sportspiel-Symposium der dvs
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Start</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#willkommen">Willkommen</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">Programm</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#keynotes">Keynotes</a></li>
+                        <li><a class="dropdown-item" href="#podium">Podiumsdiskussion</a></li>
+                        <li><a class="dropdown-item" href="#workshops">Workshops</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#workshops">FachleiterInnentagungen /
+                            Verbands-Symposien</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#zeitplan">Zeitplan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#anmeldung">Anmeldung</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#veranstaltungsort" role="button"
+                       data-bs-toggle="dropdown" aria-expanded="false">Veranstaltungsort</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#anreise">Anreise</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Impressum</a>
+                </li> -->
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="hero text-center">
+    <div class="container text-overlay">
+        <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
+        <p class="fs-2">„Sportspiel-Praxis: Innovationen, Erkenntnisse & Leistungen“</p>
+        <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
+        <a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>
+    </div>
+</header>
+
+<!-- Willkommen Section -->
+<section id="willkommen" class="section-padding">
+    <div class="container text-center">
+        <h1>Willkommen zum Symposium</h1>
+        <h3>„SPIEL – Sportspiel | Praxis | Innovationen | Erkenntnisse | Leistungen“</h3>
+        <p class="mt-3">Im Rahmen des Tagungsthemas „SPIEL – Sportspiel | Praxis | Innovationen | Erkenntnisse |
+            Leistungen“ widmet sich das 14. Sportspiel-Symposium der dvs-Kommission Sportspiele einer breiten
+            inhaltlichen Auseinandersetzung mit dem Sportspiel in all seinen Facetten. Thematisiert werden
+            praxisnahe Impulse, wissenschaftliche Erkenntnisse, innovative Ansätze und leistungsorientierte
+            Perspektiven. Die Veranstaltung richtet sich an WissenschaftlerInnen, TrainerInnen, Lehrkräfte und alle,
+            die sich mit der Faszination und Komplexität von Sportspielen beschäftigen.<br>
+            Wir freuen uns auf Euch!</p>
+        <!-- 16:9 aspect ratio -->
+        <!--        <div class="embed-responsive embed-responsive-16by9">-->
+        <!--            <iframe class="embed-responsive-item" src="video/teaser_v4.mp4"></iframe>-->
+        <!--        </div>-->
+        <video class="img-fluid" controls poster="video/teaser_v4_poster.jpeg">
+            <source src="video/teaser_v4.mp4" type="video/mp4">
+            Dein Browser unterstützt das Video-Tag nicht.
+        </video>
+    </div>
+</section>
+
+<!-- Programm Section -->
+<section id="programm" class="bg-light section-padding">
+    <div class="container">
+        <h2 class="text-center">Programm</h2>
+        <div class="row text-center mt-3">
+            <div class="col">
+                <h5>Keynotes</h5>
+                <p>Top-Speaker aus Forschung und Praxis präsentieren neueste Erkenntnisse.</p>
+            </div>
+            <div class="col">
+                <h5>Podiumsdiskussion</h5>
+                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+            </div>
+            <div class="col">
+                <h5>Workshops</h5>
+                <p>Praxisnahe Übungen für TrainerInnen, Lehrkräfte und WissenschaftlerInnen.</p>
+            </div>
+            <div class="col">
+                <h5>Networking</h5>
+                <p>Austausch in entspannter Atmosphäre mit Expert:innen und Gleichgesinnten.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Keynotes Section -->
+<section id="keynotes" class="section-padding">
+    <div class="container text-center">
+        <h2>Keynotes</h2>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Brand_Ralf_320x320.jpg" alt="Ralf Brand">
+                    <h3 class="name">Ralf Brand</h3>
+                    <p class="title">Univ.-Prof. Dr.</p>
+                    <p class="description">Ralf Brand ist Professor für Sportpsychologie an der Universität Potsdam.
+                        In seiner wissenschaftlichen Arbeit untersucht er, wie sich das mit Sport und Bewegung
+                        verbundene affektive Erleben auf motivationale Prozesse der Verhaltensänderung auswirkt. Als
+                        Gründer und mittlerweile Wissenschaftlicher Leiter des Zentrums für Praktische
+                        Sportpsychologie an der UP. Transfer GmbH der Universität Potsdam ist er mit Fragen zur
+                        Gestaltung, Durchführung und Qualitätssicherung sportpsychologischer Angebote im
+                        Spitzensport bestens vertraut. Neben verschiedenen wissenschaftlichen Projekten und
+                        Publikationen zum Thema Schiedsrichter im Sport leitete er selbst 16 Jahre Spiele in der 1.
+                        Basketballbundesliga der Herren in Deutschland. Seit der Saison 2024-25 ist er für die
+                        easyCredit Basket Ballbundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
+                        setzt er sich mit SchiedsrichterInnen im Sportspiel auseinander.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Schubring_Astrid_320x320.jpg" alt="Astrid Schubring">
+                    <h3 class="name">Astrid Schubring</h3>
+                    <p class="title">Univ.-Prof. Dr.</p>
+                    <p class="description">Astrid Schubring ist Professorin für Soziologie des Sports und leitet die
+                        Abteilung Sportsoziologie an der Deutschen Sporthochschule in Köln. Sie promovierte 2014 am
+                        Institut für Sportwissenschaft in Tübingen mit einer Studie zum Nachwuchsleistungssport und
+                        erhielt 2015 den Promotionspreis der Universität Tübingen für ihre Dissertation. Von
+                        2014-2023 war sie an der Universität Göteborg in Schweden tätig, wo sie sich 2019
+                        habilitierte.
+                        In ihrer Forschung beschäftigt sich Prof.‘in Schubring u.a. mit den sozialen Bedingungen der
+                        Gesundheit von Athlet:innen, der Schaffung nachhaltiger Förderstrukturen und der
+                        Karriereentwicklung im Olympischen und Paralympischen Sport. In ihrem Vortrag stellt sie
+                        ausgewählte Ergebnisse aus einem <a
+                                href="https://www.dshs-koeln.de/institut-fuer-soziologie-und-genderforschung/abteilung-sportsoziologie/forschung/qualift-trainerinnen-qualifizierung-von-frauen-fuer-den-trainerberuf/">BISp-geförderten
+                            Kooperationsprojekt zur Qualifizierung und den Karrierewegen von Trainerinnen im
+                            deutschen Spitzensport</a> vor.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Joerg-Schorer_WEB.jpg" alt="Jörg Schorer">
+                    <h3 class="name">Jörg Schorer</h3>
+                    <p class="title">Uni-Prof. Dr.</p>
+                    <p class="description">Jörg Schorer von der Carl von Ossietzky Universität Oldenburg (Institut
+                        für Sportwissenschaft) behandelt die Bedeutung von Talent sowie kognitiver Faktoren von
+                        SpielerInnen im Sportspiel.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Podiumsdiskussion  Section -->
+<section id="podium" class="bg-light section-padding">
+    <div class="container text-center">
+        <h2>Podiumsdiskussion</h2>
+    </div>
+</section>
+
+<!-- Workshops Section -->
+<section id="workshops" class="section-padding">
+    <div class="container text-center">
+        <h2>Workshops</h2>
+    </div>
+</section>
+
+<!-- Zeitplan Section -->
+<section id="zeitplan" class="bg-light section-padding">
+    <div class="container">
+        <h2 class="text-center">Zeitplan</h2>
+        <ul class="timeline">
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time">August 2025</div>
+                <h3>First Announcement</h3>
+                <div class="description">
+                    <p>Schalten der Webpräsenz.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time text-success">15.12.2025</div>
+                <h3 class="text-success">Beitragsaufruf und Beginn der Anmeldung (Early-Bird)</h3>
+                <div class="description">
+                    <p>Beiträge können <a href="conftool">eingereicht</a> werden und die <a
+                            href="conftool">Anmeldung</a> ist möglich.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time text-danger">01.03.2026</div>
+                <h3 class="text-danger">Einreichungsfrist für Beiträge</h3>
+                <div class="description">
+                    <p>Ender der Beitragseinreichung.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time">15.04.2026</div>
+                <h3>Rückmeldung über Gutachten der Beiträge</h3>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time text-danger">31.05.2026</div>
+                <h3 class="text-danger">Ende der Anmeldung (Early-Bird)</h3>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time text-danger">15.07.2026</div>
+                <h3 class="text-danger">Ende der Anmeldung</h3>
+                <div class="description">
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </li>
+            <li class="event">
+                <div class="left-arrow"></div>
+                <div class="time">30.09. - 02.10.2026</div>
+                <h3>Symposium</h3>
+                <div class="description">
+                    <p>14. Sportspiel-Symposium der dvs</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Anmeldung Section -->
+<section id="anmeldung" class="section-padding">
+    <div class="container text-center">
+        <h2>Jetzt anmelden</h2>
+        <a href="#" class="btn btn-primary btn-lg mt-3">Zur Anmeldung</a>
+    </div>
+</section>
+
+<!-- Veranstaltungsort  Section -->
+<section id="veranstaltungsort" class="bg-light section-padding">
+    <div class="container text-center">
+        <h2>Veranstaltungsort</h2>
+        <h3>Deutsche Sporthochschule Köln</h3>
+        <p><a href="https://www.dshs-koeln.de">Deutsche Sporthochschule Köln</a></p>
+    </div>
+</section>
+
+<!-- Anreise Section -->
+<section id="anreise" class="section-padding">
+    <div class="container text-center">
+        <h2>Anreise</h2>
+        <p class="mt-3">Deutsche Sporthochschule Köln<br>
+            Am Sportpark Müngersdorf 6<br>
+            50933 Köln</p>
+
+        <h3>Mit dem Auto</h3>
+        <p>
+            Sie finden die Deutsche Sporthochschule in Köln-Müngersdorf, direkt am Sportpark Müngersdorf und dem
+            RheinEnergie Stadion. Sie erreichen uns über die A1, Autobahnausfahrt Köln-Lövenich. Folgen Sie der
+            Beschilderung zum RheinEnergieStadion bis zum Hinweisschild Deutsche Sporthochschule.</p>
+
+        <h3>Mit öffentlichen Verkehrsmitteln</h3>
+        <p>Stadtbahn Linie 1 - Junkersdorf/Weiden (bzw. Brück/Bensberg bei Einstieg Haltestelle Weiden-West) oder
+            Busse der KVB-Linien 141 / 143 / 144, Haltestelle Junkersdorf/Sporthochschule oder Haltestelle
+            RheinEnergieSTADION.</p>
+
+        <h5>Verbindung vom Flughafen</h5>
+        <p>S-Bahn S 13 bis Messe/Deutz, dann Stadtbahn Linie 1 (Junkersdorf/Weiden), Haltestelle
+            Junkersdorf/Sporthochschule oder Haltestelle RheinEnergieSTADION.</p>
+
+        <h5>Verbindung vom Bahnhof</h5>
+        <p>Vom Kölner Hauptbahnhof mit der Stadtbahn Linie 16 oder 18 bis Neumarkt, dann Linie 1 (Richtung
+            Junkersdorf/Weiden), Haltestelle Junkersdorf/Sporthochschule oder Haltestelle RheinEnergieSTADION. Am
+            Bahnhof Köln-Deutz steigen Sie direkt in die Stadtbahn Linie 1 (Richtung Junkersdorf/Weiden).</p>
+
+        <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Campusplan_DSHS.pdf">Lageplan</a>. Um von der Haltestelle
+            Junkersdorf/Sporthochschule auf unseren Campus zu kommen, nutzen Sie bitte die Straße Am Sportpark
+            Müngersdorf. Der Fußweg zwischen der Straße Am Römerhof und dem Gebäude mit der Nummer 6 ist derzeit
+            aufgrund von Baumaßnahmen gesperrt (siehe <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte Wegführung</a>).</p>
+        <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem Campus erhalten Sie auf der Webseite <a href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a></p>
+    </div>
+</section>
+
+<!-- Kontakt Section -->
+<section id="kontakt" class="bg-light section-padding">
+    <div class="container text-center">
+        <h2>Kontakt</h2>
+        <p class="col-md-3">
+        <div class="social"><a href="mailto:info@sportspiel2026.de"><i class="bi bi-envelope-at"></i> info@sportspiel2026.de</a></div>
+        <img src="images/team_800x514.jpg" class="img-fluid" alt="Team-Foto">
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="bg-dark text-white text-center py-4">
+    <div class="container">
+        <a href="https://www.sportwissenschaft.de" target="_blank">
+            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo" style="height: 45px; margin-bottom: 15px;">
+        </a>
+        <p class="mb-1">Veranstalter:
+        <p class="mb-1">dvs-Kommission Sportspiele
+        <p class="mb-1">und
+        <p class="mb-0">Deutsche Sporthochschule Köln - Institut für Trainingswissenschaft und Sportinformatik -
+            Abteilung Kognitions- und Sportspielforschung</p>
+        <p class="mb-1">Deutsche Sporthochschule Köln - Am Sportpark 6 - 50933 Köln</p>
+        <p><a href="mailto:info@sportspiel2026.de" class="text-white">Kontakt</a> - <a href="impressum.html" class="text-white">Impressum</a></p>
+    </div>
+</footer>
+
 </body>
+
 </html>
