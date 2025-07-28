@@ -1,0 +1,201 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won’t be available)
+@font-face {
+  font-display: swap;
+  font-family: 'Mukta Mahee';
+  font-style: normal;
+  font-weight: 400;
+  src: url('font/mukta-mahee-v18-latin-regular.woff2') format('woff2');
+}
+$display-font-family: 'Mukta Mahee', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+$bootstrap-icons-font-dir: "../node_modules/bootstrap-icons/font/fonts";
+@import "../node_modules/bootstrap-icons/font/bootstrap-icons";
+
+
+
+// timeline - BEGIN
+$bgColor: var(--bs-bg-opacity);
+$timelineColor: var(--bs-blue);
+
+// Generic body stuff
+body { background: $bgColor; font-family: $display-font-family; padding-top: 30px; }
+
+ul.timeline {
+  position: relative;
+  list-style-type: none;
+  padding-left: 180px;
+  &:before {
+    position: absolute;
+    display: block;
+    left: 136px;
+    width: 8px;
+    height: 100%;
+    border-radius: 4px;
+    background-color: $timelineColor;
+    content: ' ';
+  }
+  .event {
+    position: relative;
+    padding: 16px;
+    background: white;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,.2),0 1px 1px 0 rgba(0,0,0,.14),0 2px 1px -1px rgba(0,0,0,.12);
+    padding: 16px;
+    margin-bottom: 30px;
+    &:before {
+      display: block;
+      position: absolute;
+      top: 30px;
+      left: -55px;
+      width: 30px;
+      height: 30px;
+      border: 6px solid $timelineColor;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 0 0 4px -1px rgba(0,0,0,0.6);
+      content: ' ';
+    }
+  }
+  h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  .time {
+    position: absolute;
+    display: block;
+    width: 120px;
+    top: 33px;
+    left: -179px;
+    font-size: 1.0em;
+    text-align: right;
+    font-weight: 600;
+    text-transform: uppercase;
+    >.glyphicon-time {
+      top: 2px;
+    }
+  }
+  .left-arrow {
+     &:before {
+      position: absolute;
+      top: 30px;
+      left: -15px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #ddd;
+      border-left: 0 solid #ddd;
+      border-bottom: 15px solid transparent;
+      content: ' ';
+    }
+    &:after {
+      position: absolute;
+      top: 30px;
+      left: -14px;
+      display: inline-block;
+      border-top: 15px solid transparent;
+      border-right: 15px solid #fff;
+      border-left: 0 solid #fff;
+      border-bottom: 15px solid transparent;
+      content: ' ';
+    }
+  }
+}
+// timeline - END
+
+// team cards - BEGIN
+.team-boxed {
+  color:#313437;
+  background-color:#eef4f7;
+}
+
+.team-boxed p {
+  color:#7d8285;
+}
+
+.team-boxed h2 {
+  font-weight:bold;
+  margin-bottom:40px;
+  padding-top:40px;
+  color:inherit;
+}
+
+@media (max-width:767px) {
+  .team-boxed h2 {
+    margin-bottom:25px;
+    padding-top:25px;
+    font-size:24px;
+  }
+}
+
+.team-boxed .intro {
+  font-size:16px;
+  max-width:500px;
+  margin:0 auto;
+}
+
+.team-boxed .intro p {
+  margin-bottom:0;
+}
+
+.team-boxed .people {
+  padding:50px 0;
+}
+
+.team-boxed .item {
+  text-align:center;
+}
+
+.team-boxed .item .box {
+  text-align:center;
+  padding:30px;
+  background-color:#fff;
+  margin-bottom:30px;
+}
+
+.team-boxed .item .name {
+  font-weight:bold;
+  margin-top:28px;
+  margin-bottom:8px;
+  color:inherit;
+}
+
+.team-boxed .item .title {
+  text-transform:uppercase;
+  font-weight:bold;
+  color:#d0d0d0;
+  letter-spacing:2px;
+  font-size:13px;
+}
+
+.team-boxed .item .description {
+  font-size:15px;
+  margin-top:15px;
+  margin-bottom:20px;
+}
+
+.team-boxed .item img {
+  max-width:160px;
+}
+
+.team-boxed .social {
+  font-size:18px;
+  color:#a2a8ae;
+}
+
+.team-boxed .social a {
+  color:inherit;
+  margin:0 10px;
+  display:inline-block;
+  opacity:0.7;
+}
+
+.team-boxed .social a:hover {
+  opacity:1;
+}
+// team cards - END
