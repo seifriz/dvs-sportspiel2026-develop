@@ -9,6 +9,6 @@ lcd "G:\www\dvs-sportspiel2026-Website\dvs-sportspiel2026-develop"
 cd /www-develop
 
 # Synchronisiere das Web-Server-Ziel-Remote-Verzeichnis (mit löschen)
-synchronize remote -delete -filemask="| .git/;.idea/"
+synchronize remote -delete -filemask="| .git/;.idea/;.gitignore"
 
 exit
