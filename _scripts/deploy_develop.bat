@@ -1,7 +1,7 @@
 @echo off
 chcp 1252 >nul
 
-title Deployment für Developer-Version
+title Deployment für Developer-Version!
 
 setlocal
 
