@@ -9,10 +9,10 @@ setlocal
 set WINSCP="C:\Program Files (x86)\WinSCP\WinSCP.com"
 
 :: Skriptdatei
-set SCRIPT="G:\www\dvs-sportspiel2026-Website\deploy_web-develop.txt"
+set SCRIPT="G:\www\dvs-sportspiel2026-Website\deploy_develop.txt"
 
 :: Logfile
-set LOG="G:\www\dvs-sportspiel2026-Website\___winscp_log_deploy_web-develop.txt"
+set LOG="G:\www\dvs-sportspiel2026-Website\___winscp_log_deploy_develop.txt"
 
 
 echo Deployment für Developer-Version
