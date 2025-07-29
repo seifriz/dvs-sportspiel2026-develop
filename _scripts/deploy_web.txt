@@ -1,0 +1,14 @@
+# Verbindung zum SFTP-Server mit Key
+# Web-Server: .ssh\authorized_keys
+open su137704@5018191669.ssh.w2.strato.hosting_key
+
+# Lokales-Quell-Verzeichnis: Produktiv: dvs-sportspiel2026
+lcd G:\www\dvs-sportspiel2026-Website\dvs-sportspiel2026
+
+# Web-Server-Ziel-Remote-Verzeichnis: Produktiv
+cd /www
+
+# Synchronisiere das Web-Server-Ziel-Remote-Verzeichnis (mit löschen)
+synchronize remote -delete
+
+exit
