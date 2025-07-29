@@ -23,7 +23,7 @@ echo nach:
 echo.
 echo %WEB_DIR%
 echo.
-echo kopiert werden?
+echo synchronisiert werden?
 echo.
 echo.
 echo Achtung! %WEB_DIR% wird vollständig überschrieben! (J/N)
