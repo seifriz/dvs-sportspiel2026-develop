@@ -36,6 +36,22 @@
 </head>
 <body>
 
+
+<!-- Working Header -->
+<div style="
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 30px; /* mehr Platz oben/unten */
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #f5c6cb;
+  font-size: 2em; /* größere Schrift */
+">
+  ⚠️ Diese Website befindet sich aktuell in Entwicklung. Bitte nicht weitergeben. ⚠️
+</div>
+
+
+
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
@@ -227,12 +243,12 @@
     </div>
 </section>
 
-<!-- Podiumsdiskussion Section -->
+<!-- Hörsaal Section -->
 <section id="podium" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Podiumsdiskussion</h2>
         <p>Diskussion mit SpitzensportlerInnen und führenden TrainernInnen.</p>
-        BILD Hörsaal
+        <img src="images/Hoersaal.jpg" alt="Hörsaal der Podiumsdiskussion" class="img-fluid mt-4" style="max-width: 75%; height: auto;">
     </div>
 </section>
 
@@ -240,9 +256,12 @@
 <section id="arbeitskreise" class="section-padding">
     <div class="container text-center">
         <h2>Arbeitskreise</h2>
-        <p>Zahlreiche (themenspezifische) Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele
-            im NawiMedi.</p>
-        BILD NawiMedi
+        <p>Zahlreiche (themenspezifische) Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele im NawiMedi.</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <img src="images/nawimedi1.jpg" alt="NawiMedi 1" style="max-width: 30%; height: auto;">
+            <img src="images/nawimedi2.jpg" alt="NawiMedi 2" style="max-width: 25%; height: auto;">
+            <img src="images/nawimedi3.jpg" alt="NawiMedi 3" style="max-width: 25%; height: auto;">
+        </div>
     </div>
 </section>
 
@@ -251,7 +270,14 @@
     <div class="container text-center">
         <h2>Workshops</h2>
         <p>Praxisworkshops in verschiedenen Sporthallen.</p>
-        BILDER Sporthallen
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <img src="images/sporthalle1.jpg" class="img-fluid rounded shadow" alt="Sporthalle 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/sporthalle2.jpg" class="img-fluid rounded shadow" alt="Sporthalle 2">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -260,16 +286,26 @@
     <div class="container text-center">
         <h2>Posterpräsentation</h2>
         <p>Posterpräsentation und Kaffeepausen im Hauptgebäude.</p>
-        BILDER Hauptgebäude
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 mb-4 d-flex justify-content-center">
+                <img src="images/hauptgebaeude1.jpg" class="img-fluid rounded shadow" alt="Hauptgebäude 1" style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="col-md-5 mb-4 d-flex justify-content-center">
+                <img src="images/hauptgebaeude2.jpg" class="img-fluid rounded shadow" alt="Hauptgebäude 2" style="max-height: 400px; object-fit: cover;">
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Fachleitertagungen Section -->
 <section id="fachleiter" class="bg-light section-padding">
     <div class="container text-center">
-        <h2>FachleiterInnentagungungen und Verband-Symposien</h2>
+        <h2>FachleiterInnentagungen und Verband-Symposien</h2>
         <p>FachleiterInnentagungen (Satelliten-Workshops), Verbands-Symposien.</p>
-        BILDER Langbank und Tischtennis
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <img src="images/langbank.jpg" class="img-fluid rounded shadow" alt="Langbank" style="max-height: 300px; object-fit: contain;">
+            <img src="images/tischtennis.jpg" class="img-fluid rounded shadow" alt="Tischtennis" style="max-height: 300px; object-fit: contain;">
+        </div>
     </div>
 </section>
 
@@ -283,7 +319,7 @@
         <p>Das Restaurant befindet sich im selben Gebäudekomplex wie das Hockey- und Judoleistungszentrum und das
             Gästehaus der Deutschen Sporthochschule Köln. Es ist fußläufig (ca. 5 Minuten) vom Veranstaltungsort
             entfernt.</p>
-        BILDER Türner
+        <img src="images/tuernner.png" alt="Restaurant Ulrich Türner" class="img-fluid rounded shadow" style="max-width: 100%; height: auto; margin-top: 1rem;">
     </div>
 </section>
 
@@ -293,7 +329,10 @@
         <h2>Mögliches Sportprogramm</h2>
         <p>Mögliches Sportprogramm in der Halle und Frühsport im Kölner Stadtwald.</p>
         <p>Weitere detaillierte Informationen zum Programm folgen zu gegebener Zeit.</p>
-        BILDER Halle und Luftbild
+        <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+            <img src="images/halle.jpg" alt="Sporthalle" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
+            <img src="images/luftbild.jpg" alt="Luftbild Kölner Stadtwald" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
+        </div>
     </div>
 </section>
 
@@ -494,7 +533,10 @@
         <h2>Veranstaltungsort</h2>
         <h3>Deutsche Sporthochschule Köln</h3>
         <p><a href="https://www.dshs-koeln.de">Deutsche Sporthochschule Köln</a></p>
-        BILDER Sporthochschule
+        <div class="mt-3">
+            <img src="images/sporthochschule1.jpg" alt="Sporthochschule Bild 1" class="img-fluid rounded shadow mb-3" style="max-width: 100%; height: auto;">
+            <img src="images/sporthochschule2.jpg" alt="Sporthochschule Bild 2" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+        </div>
     </div>
 </section>
 
