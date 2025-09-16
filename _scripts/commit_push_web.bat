@@ -18,7 +18,7 @@ echo %WEB_DIR%
 echo.
 echo commited und gepushed werden? (J/N)
 echo.
-choice /c JN /n /m "Bitte bestätigen Sie mit J (Ja) oder N (Nein): "
+choice /c JN /n /m "Bitte bestÃ¤tigen Sie mit J (Ja) oder N (Nein): "
 
 if errorlevel 2 goto :abbruch
 if errorlevel 1 goto :pushen
@@ -41,7 +41,7 @@ echo.
 git add .
 git commit -m "%MESSAGE%" 2>nul
 if errorlevel 1 (
-    echo Keine neuen Änderungen zum Commit.
+    echo Keine neuen Ã„nderungen zum Commit.
 )
 
 for /f "delims=" %%b in ('git rev-parse --abbrev-ref HEAD') do set BRANCH=%%b

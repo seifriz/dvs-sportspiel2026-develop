@@ -26,9 +26,9 @@ echo.
 echo synchronisiert werden?
 echo.
 echo.
-echo Achtung! %WEB_DIR% wird vollständig überschrieben! (J/N)
+echo Achtung! %WEB_DIR% wird vollstÃ¤ndig Ã¼berschrieben! (J/N)
 echo.
-choice /c JN /n /m "Bitte bestätigen Sie mit J (Ja) oder N (Nein): "
+choice /c JN /n /m "Bitte bestÃ¤tigen Sie mit J (Ja) oder N (Nein): "
 
 if errorlevel 2 goto :abbruch
 if errorlevel 1 goto :sync
