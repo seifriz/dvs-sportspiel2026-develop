@@ -1,17 +1,15 @@
-<!-- OBSOLET -->
-<?php
-//require_once 'functions.php';
-//?>
-<!-- OBSOLET -->
-
-
 <?php
 session_start();
 // Einfaches CSRF-Token erzeugen und in der Session speichern
+// Wird in send.php (CSRF-Check) geprüft
 if (empty($_SESSION['csrf_token'])) {
     $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
 }
 $csrfToken = $_SESSION['csrf_token'];
+?>
+
+<?php
+require_once 'functions.php';
 ?>
 
 <!doctype html>
@@ -49,7 +47,14 @@ $csrfToken = $_SESSION['csrf_token'];
         }
 
         /* Honeypot (Kontaktformular) unsichtbar, aber für Screenreader versteckt */
-        .hp-field { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+        .hp-field {
+            position: absolute;
+            left: -10000px;
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -65,12 +70,12 @@ $csrfToken = $_SESSION['csrf_token'];
   border-bottom: 2px solid #f5c6cb;
   font-size: 2em; /* größere Schrift */
 ">
-  ⚠️ Diese Website befindet sich aktuell in Entwicklung. Bitte nicht weitergeben. ⚠️
+    ⚠️ Diese Website befindet sich aktuell in Entwicklung. Bitte nicht weitergeben. ⚠️
 </div>
 
 
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
@@ -82,12 +87,8 @@ $csrfToken = $_SESSION['csrf_token'];
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Start</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#willkommen">Willkommen</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
+                <li class="nav-item"><a class="nav-link" href="#willkommen">Willkommen</a></li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">Programm</a>
@@ -97,30 +98,17 @@ $csrfToken = $_SESSION['csrf_token'];
                         <li><a class="dropdown-item" href="#arbeitskreise">Arbeitskreise</a></li>
                         <li><a class="dropdown-item" href="#workshops">Workshops</a></li>
                         <li><a class="dropdown-item" href="#poster">Posterpräsentation</a></li>
-                        <li><a class="dropdown-item" href="#fachleiter">FachleiterInnentagungungen und
-                            Verband-Symposien</a></li>
+                        <li><a class="dropdown-item" href="#fachleiter">FachleiterInnentagungungen und Verband-Symposien</a></li>
                         <li><a class="dropdown-item" href="#gesellschaftsabend">Gesellschaftsabend</a></li>
                         <li><a class="dropdown-item" href="#sportprogramm">Sportprogramm</a></li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#zeitplan">Zeitplan</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#beitragsformat">Beitragsformat</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#anmeldung">Anmeldung</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#anreise">Anreise</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">Kontakt</a>
-                </li>
+                <li class="nav-item"><a class="nav-link" href="#zeitplan">Zeitplan</a></li>
+                <li class="nav-item"><a class="nav-link" href="#beitragsformat">Beitragsformat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anmeldung">Anmeldung</a></li>
+                <li class="nav-item"><a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anreise">Anreise</a></li>
+                <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
     </div>
@@ -130,10 +118,9 @@ $csrfToken = $_SESSION['csrf_token'];
 <header class="hero text-center">
     <div class="container text-overlay">
         <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
-        <p class="fs-2">„SPIEL - <b>S</b>portspiel-<b>P</b>raxis: <b>I</b>nnovationen, <b>E</b>rkenntnisse & <b>L</b>eistungen“
-        </p>
+        <p class="fs-2">„SPIEL - <b>S</b>portspiel-<b>P</b>raxis: <b>I</b>nnovationen, <b>E</b>rkenntnisse & <b>L</b>eistungen“</p>
         <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
-        <!--        <a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>-->
+        <!--<a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>-->
     </div>
 </header>
 
@@ -142,11 +129,9 @@ $csrfToken = $_SESSION['csrf_token'];
 <section id="willkommen" class="section-padding">
     <div class="container text-center">
         <h1>Willkommen zum Symposium</h1>
-        <h3>„SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“
-        </h3>
-        <p class="mt-3">Im Rahmen des Tagungsthemas „SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen |
-            <b>E</b>rkenntnisse |
-            Leistungen“ widmet sich das 14. Sportspiel-Symposium der dvs-Kommission Sportspiele einer breiten
+        <h3>„SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“</h3>
+        <p class="mt-3">Im Rahmen des Tagungsthemas „SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“
+            widmet sich das 14. Sportspiel-Symposium der dvs-Kommission Sportspiele einer breiten
             inhaltlichen Auseinandersetzung mit dem Sportspiel in all seinen Facetten. Thematisiert werden
             praxisnahe Impulse, wissenschaftliche Erkenntnisse, innovative Ansätze und leistungsorientierte
             Perspektiven. Die Veranstaltung richtet sich an WissenschaftlerInnen, TrainerInnen, Lehrkräfte und alle,
@@ -210,8 +195,7 @@ $csrfToken = $_SESSION['csrf_token'];
         <h2>Keynotes</h2>
         <div class="row people">
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="images/keynotes/Brand_Ralf_320x320.jpg"
-                                      alt="Ralf Brand">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Brand_Ralf_320x320.jpg" alt="Ralf Brand">
                     <h3 class="name">Ralf Brand</h3>
                     <p class="title">Univ.-Prof. Dr.</p>
                     <p class="description">Ralf Brand ist Professor für Sportpsychologie an der Universität Potsdam.
@@ -228,8 +212,7 @@ $csrfToken = $_SESSION['csrf_token'];
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="images/keynotes/Schubring_Astrid_320x320.jpg"
-                                      alt="Astrid Schubring">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Schubring_Astrid_320x320.jpg" alt="Astrid Schubring">
                     <h3 class="name">Astrid Schubring</h3>
                     <p class="title">Univ.-Prof. Dr.</p>
                     <p class="description">Astrid Schubring ist Professorin für Soziologie des Sports und leitet die
@@ -248,11 +231,12 @@ $csrfToken = $_SESSION['csrf_token'];
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="images/keynotes/Jaspers_Schorer_320x320_2.jpg"
-                                      alt="Jörg Schorer">
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Jaspers_Schorer_320x320_2.jpg" alt="Jörg Schorer">
                     <h3 class="name">Jörg Schorer</h3>
                     <p class="title">Uni-Prof. Dr.</p>
-                    <p class="description">Jörg Schorer ist der Leiter des Arbeitsbereichs „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a. Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund, dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
+                    <p class="description">Jörg Schorer ist der Leiter des Arbeitsbereichs „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a.
+                        Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund,
+                        dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
                 </div>
             </div>
         </div>
@@ -370,8 +354,8 @@ $csrfToken = $_SESSION['csrf_token'];
                 <div class="time text-success">15.12.2025</div>
                 <h3 class="text-success">Beitragsaufruf und Beginn der Anmeldung (Early-Bird)</h3>
                 <div class="description">
-<!--                    <p>Beiträge können <a href="conftool">eingereicht</a> werden und die <a-->
-<!--                            href="conftool">Anmeldung</a> ist möglich.</p>-->
+                    <!--                    <p>Beiträge können <a href="conftool">eingereicht</a> werden und die <a-->
+                    <!--                            href="conftool">Anmeldung</a> ist möglich.</p>-->
                     <p>Beiträge können eingereicht werden und die Anmeldung ist möglich.</p>
                 </div>
             </li>
@@ -379,33 +363,33 @@ $csrfToken = $_SESSION['csrf_token'];
                 <div class="left-arrow"></div>
                 <div class="time text-danger">01.03.2026</div>
                 <h3 class="text-danger">Einreichungsfrist für Beiträge</h3>
-<!--                <div class="description">-->
-<!--                    <p>Ende der Beitragseinreichung.</p>-->
-<!--                </div>-->
+                <!--                <div class="description">-->
+                <!--                    <p>Ende der Beitragseinreichung.</p>-->
+                <!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time">15.04.2026</div>
                 <h3>Rückmeldung über Gutachten der Beiträge</h3>
-<!--                <div class="description">-->
-<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
-<!--                </div>-->
+                <!--                <div class="description">-->
+                <!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+                <!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time text-danger">31.05.2026</div>
                 <h3 class="text-danger">Ende der Anmeldung (Early-Bird)</h3>
-<!--                <div class="description">-->
-<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
-<!--                </div>-->
+                <!--                <div class="description">-->
+                <!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+                <!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time text-danger">15.07.2026</div>
                 <h3 class="text-danger">Ende der Anmeldung (Regulärer Tarif)</h3>
-<!--                <div class="description">-->
-<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
-<!--                </div>-->
+                <!--                <div class="description">-->
+                <!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+                <!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
@@ -423,10 +407,10 @@ $csrfToken = $_SESSION['csrf_token'];
 <section id="beitragsformat" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Beitragsformat</h2>
-            <p><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises</p>
-            <p><span>&#8226;</span> Poster</p>
-            <p><span>&#8226;</span> Arbeitskreis</p>
-            <p><span>&#8226;</span> Praxisworkshop</p>
+        <p><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises</p>
+        <p><span>&#8226;</span> Poster</p>
+        <p><span>&#8226;</span> Arbeitskreis</p>
+        <p><span>&#8226;</span> Praxisworkshop</p>
         <p>Konkrete Hinweise zur Beitragseinreichung folgen.</p>
     </div>
 </section>
@@ -448,50 +432,55 @@ $csrfToken = $_SESSION['csrf_token'];
             <tbody class="table-group-divider">
             <tr>
                 <td class="table-secondary"><b>Early-Bird Tarif</b><br>
-                    (15.12.2025 - 31.05.2026)</td>
+                    (15.12.2025 - 31.05.2026)
+                </td>
                 <td>205 €</td>
                 <td>165 €</td>
                 <td>100 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Regulärer Tarif</b><br>
-                    (01.06.2026 - 15.07.2026)</td>
+                    (01.06. - 15.07.2026)
+                </td>
                 <td>245 €</td>
                 <td>200 €</td>
                 <td>125 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Vorortregistrierung</b><br>
-                    (30.09.2026 - 02.10.2026)</td>
+                    (30.09. - 02.10.2026)
+                </td>
                 <td>275 €</td>
                 <td>225 €</td>
                 <td>140 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
-                    Early-Bird Tarif</b></td>
+                        Early-Bird Tarif</b></td>
                 <td colspan="3">115 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
-                    Regulärer Tarif</b></td>
+                        Regulärer Tarif</b></td>
                 <td colspan="3">140 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
-                    Vorortregistrierung</b></td>
+                        Vorortregistrierung</b></td>
                 <td colspan="3">155 €</td>
             </tr>
             <tr>
                 <td class="table-light"><b>Get-Together Abend</b><br>
-                    (30.09.2026)</td>
-                <td class="table-light" colspan="3">Essen und Getränke auf Selbstzahler*innenbasis<br>
+                    (30.09.2026)
+                </td>
+                <td class="table-light" colspan="3">Essen und Getränke auf SelbstzahlerInnenbasis<br>
                     <i>Bei Anmeldung bitte angeben, ob Interesse an einer Teilnahme besteht.</i></td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Gesellschaftsabend<br>
-                    -Dinner-</b><br>
-                    (01.10.2026)</td>
+                        -Dinner-</b><br>
+                    (01.10.2026)
+                </td>
                 <td colspan="3">85 €</td>
             </tr>
             </tbody>
@@ -522,38 +511,28 @@ $csrfToken = $_SESSION['csrf_token'];
         <p>Deutsche Sporthochschule Köln<br>
             Am Sportpark Müngersdorf 6<br>
             50933 Köln</p>
-
         <h3>Mit dem Auto</h3>
-        <p>
-            Sie finden die Deutsche Sporthochschule in Köln-Müngersdorf, direkt am Sportpark Müngersdorf und dem
+        <p>Sie finden die Deutsche Sporthochschule in Köln-Müngersdorf, direkt am Sportpark Müngersdorf und dem
             RheinEnergie Stadion. Sie erreichen uns über die A1, Autobahnausfahrt Köln-Lövenich. Folgen Sie der
             Beschilderung zum RheinEnergieStadion bis zum Hinweisschild Deutsche Sporthochschule.</p>
-
         <h3>Mit öffentlichen Verkehrsmitteln</h3>
         <p>Stadtbahn Linie 1 - Junkersdorf/Weiden (bzw. Brück/Bensberg bei Einstieg Haltestelle Weiden-West) oder
             Busse der KVB-Linien 141 / 143 / 144, Haltestelle Junkersdorf/Sporthochschule oder Haltestelle
             RheinEnergieSTADION.</p>
-
         <h5>Verbindung vom Flughafen</h5>
         <p>S-Bahn S 13 bis Messe/Deutz, dann Stadtbahn Linie 1 (Junkersdorf/Weiden), Haltestelle
             Junkersdorf/Sporthochschule oder Haltestelle RheinEnergieSTADION.</p>
-
         <h5>Verbindung vom Bahnhof</h5>
         <p>Vom Kölner Hauptbahnhof mit der Stadtbahn Linie 16 oder 18 bis Neumarkt, dann Linie 1 (Richtung
             Junkersdorf/Weiden), Haltestelle Junkersdorf/Sporthochschule oder Haltestelle RheinEnergieSTADION. Am
             Bahnhof Köln-Deutz steigen Sie direkt in die Stadtbahn Linie 1 (Richtung Junkersdorf/Weiden).</p>
-
-        <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a
-                href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Campusplan_DSHS.pdf">Lageplan</a>.
-            Um von der Haltestelle
-            Junkersdorf/Sporthochschule auf unseren Campus zu kommen, nutzen Sie bitte die Straße Am Sportpark
+        <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Campusplan_DSHS.pdf">Lageplan</a>.
+            Um von der Haltestelle Junkersdorf/Sporthochschule auf unseren Campus zu kommen, nutzen Sie bitte die Straße Am Sportpark
             Müngersdorf. Der Fußweg zwischen der Straße Am Römerhof und dem Gebäude mit der Nummer 6 ist derzeit
-            aufgrund von Baumaßnahmen gesperrt (siehe <a
-                    href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte
-                Wegführung</a>).</p>
-        <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem
-            Campus erhalten Sie auf der Webseite <a
-                    href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a></p>
+            aufgrund von Baumaßnahmen gesperrt (siehe
+            <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte Wegführung</a>).</p>
+        <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem Campus erhalten Sie auf der Webseite
+            <a href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a></p>
     </div>
 </section>
 
@@ -561,75 +540,74 @@ $csrfToken = $_SESSION['csrf_token'];
 <section id="kontakt" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Kontakt</h2>
-<!--        <div class="social"><i class="icon bi-envelope-at"></i> --><?php //= safe_mail('info', 'sportspiel2026', 'de') ?><!--</div>-->
+        <div class="social"><i class="icon bi-envelope-at"></i> <?= safe_mail('info', 'sportspiel2026', 'de') ?></div>
         <br>
         <h5>Organisatorische Leitung (Hauptansprechperson)</h5>
         <div class="social">Dr. M. Geisen<br>
-<!--            <i class="icon bi-envelope-at"></i> --><?php //= safe_mail('m.geisen', 'dshs-koeln', 'de') ?><!--<br>-->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Nachricht schreiben</button>
+            <br>
             Telefon: +49 221 4982 8735<br>
+        </div>
+        <br>
+        <h5>Abteilungsleitung</h5>
+        <div class="social">Univ.-Prof. Dr. S. Klatt</div>
 
+        <!-- Kontaktformular Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="contactModalLabel">Ihre Nachricht</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="formAlert" class="alert d-none" role="alert"></div>
 
+                        <form id="contactForm" novalidate>
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
+                                <div class="invalid-feedback">Bitte gib deinen Namen (min. 2 Zeichen) an.</div>
+                            </div>
 
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Nachricht schreiben</button></div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">E‑Mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+                                <div class="invalid-feedback">Bitte gib eine gültige E‑Mail-Adresse an.</div>
+                            </div>
 
-<!-- Kontaktformular Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="contactModalLabel">Ihre Nachricht</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
-      </div>
-      <div class="modal-body">
-        <div id="formAlert" class="alert d-none" role="alert"></div>
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Betreff</label>
+                                <input type="text" class="form-control" id="subject" name="subject" required maxlength="120">
+                                <div class="invalid-feedback">Bitte gib einen Betreff an.</div>
+                            </div>
 
-        <form id="contactForm" novalidate>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
-            <div class="invalid-feedback">Bitte gib deinen Namen (min. 2 Zeichen) an.</div>
-          </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Nachricht</label>
+                                <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" maxlength="3000"></textarea>
+                                <div class="invalid-feedback">Bitte formuliere deine Nachricht (mind. 10 Zeichen).</div>
+                            </div>
 
-          <div class="mb-3">
-            <label for="email" class="form-label">E‑Mail</label>
-            <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
-            <div class="invalid-feedback">Bitte gib eine gültige E‑Mail-Adresse an.</div>
-          </div>
+                            <!-- CSRF Token -->
+                            <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrfToken, ENT_QUOTES) ?>">
 
-          <div class="mb-3">
-            <label for="subject" class="form-label">Betreff</label>
-            <input type="text" class="form-control" id="subject" name="subject" required maxlength="120">
-            <div class="invalid-feedback">Bitte gib einen Betreff an.</div>
-          </div>
+                            <!-- Honeypot (Leer lassen) -->
+                            <div class="hp-field" aria-hidden="true">
+                                <label for="company">Firma</label>
+                                <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+                            </div>
 
-          <div class="mb-3">
-            <label for="message" class="form-label">Nachricht</label>
-            <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" maxlength="3000"></textarea>
-            <div class="invalid-feedback">Bitte formuliere deine Nachricht (mind. 10 Zeichen).</div>
-          </div>
-
-          <!-- CSRF Token -->
-          <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrfToken, ENT_QUOTES) ?>">
-
-          <!-- Honeypot (Leer lassen) -->
-          <div class="hp-field" aria-hidden="true">
-            <label for="company">Firma</label>
-            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
-          </div>
-
-          <div class="d-grid">
-            <button id="submitBtn" type="submit" class="btn btn-primary">
-              <span class="btn-text">Senden</span>
-              <span class="spinner-border spinner-border-sm ms-2 d-none" aria-hidden="true"></span>
-            </button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-
+                            <div class="d-grid">
+                                <button id="submitBtn" type="submit" class="btn btn-primary">
+                                    <span class="btn-text">Senden</span>
+                                    <span class="spinner-border spinner-border-sm ms-2 d-none" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
         <img src="images/team_800x514.jpg" class="img-fluid" alt="Team-Foto">
@@ -649,24 +627,12 @@ $csrfToken = $_SESSION['csrf_token'];
         <p class="mb-0">Deutsche Sporthochschule Köln - Institut für Trainingswissenschaft und Sportinformatik - Abteilung Kognitions- und Sportspielforschung</p>
         <p class="mb-1">Deutsche Sporthochschule Köln - Am Sportpark 6 - 50933 Köln</p>
         <p><a href="impressum.php" class="text-white">Impressum</a></p>
-<!--        <p>--><?php //= safe_mail('info', 'sportspiel2026', 'de', 'Kontakt', 'text-white') ?><!-- - <a href="impressum.php" class="text-white">Impressum</a></p>-->
     </div>
 </footer>
 
-<!-- JavaScript zum dynamischen Zusammenbau der E-Mail -->
-<!-- OBSOLET -->
-<!--<script>-->
-<!--    const user = "sales";-->
-<!--    const domain = "meinefirma.de";-->
-<!--    const mail = user + "@" + domain;-->
-<!--    document.getElementById("sales-mail").innerHTML =-->
-<!--        '<a href="mailto:' + mail + '" class="text-danger fw-bold">' + mail + '</a>';-->
-<!--</script>-->
-<!-- OBSOLET -->
-
 <!-- JavaScript Kontaktformular -->
 <script>
-    (function() {
+    (function () {
         const form = document.getElementById('contactForm');
         const alertBox = document.getElementById('formAlert');
         const submitBtn = document.getElementById('submitBtn');
@@ -697,7 +663,7 @@ $csrfToken = $_SESSION['csrf_token'];
                 const res = await fetch('send.php', {
                     method: 'POST',
                     body: formData,
-                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                    headers: {'X-Requested-With': 'XMLHttpRequest'}
                 });
                 const data = await res.json();
 
