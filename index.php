@@ -1,3 +1,19 @@
+<!-- OBSOLET -->
+<?php
+//require_once 'functions.php';
+//?>
+<!-- OBSOLET -->
+
+
+<?php
+session_start();
+// Einfaches CSRF-Token erzeugen und in der Session speichern
+if (empty($_SESSION['csrf_token'])) {
+    $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+}
+$csrfToken = $_SESSION['csrf_token'];
+?>
+
 <!doctype html>
 <html lang="de">
 <head>
@@ -5,10 +21,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>14. Sportspiel-Symposium der dvs 2026</title>
     <link rel="stylesheet" href="css/custom.css">
-    <!-- <link rel="stylesheet" href="css/timeline3.css"> -->
-    <link rel="stylesheet" href="css/timeline2.css">
     <script src="js/bootstrap.bundle.min.js"></script>
-
 
     <style>
         .hero {
@@ -34,9 +47,27 @@
             height: 45px;
             margin-right: 10px;
         }
+
+        /* Honeypot (Kontaktformular) unsichtbar, aber für Screenreader versteckt */
+        .hp-field { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
     </style>
 </head>
 <body>
+
+
+<!-- Working Header -->
+<div style="
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 30px; /* mehr Platz oben/unten */
+  text-align: center;
+  font-weight: bold;
+  border-bottom: 2px solid #f5c6cb;
+  font-size: 2em; /* größere Schrift */
+">
+  ⚠️ Diese Website befindet sich aktuell in Entwicklung. Bitte nicht weitergeben. ⚠️
+</div>
+
 
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -78,15 +109,17 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#beitragsformat">Beitragsformat</a>
                 </li>
-                <!--                <li class="nav-item">-->
-                <!--                    <a class="nav-link" href="#anmeldung">Anmeldung</a>-->
-                <!--                </li>-->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#veranstaltungsort" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">Veranstaltungsort</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#anreise">Anreise</a></li>
-                    </ul>
+                <li class="nav-item">
+                    <a class="nav-link" href="#anmeldung">Anmeldung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#anreise">Anreise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#kontakt">Kontakt</a>
                 </li>
             </ul>
         </div>
@@ -97,12 +130,13 @@
 <header class="hero text-center">
     <div class="container text-overlay">
         <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
-        <p class="fs-2">„SPIEL - <b>S</b>ortspiel-<b>P</b>raxis: <b>I</b>nnovationen, <b>E</b>rkenntnisse & <b>L</b>eistungen“
+        <p class="fs-2">„SPIEL - <b>S</b>portspiel-<b>P</b>raxis: <b>I</b>nnovationen, <b>E</b>rkenntnisse & <b>L</b>eistungen“
         </p>
         <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
         <!--        <a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>-->
     </div>
 </header>
+
 
 <!-- Willkommen Section -->
 <section id="willkommen" class="section-padding">
@@ -214,25 +248,23 @@
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
-                <div class="box"><img class="rounded-circle" src="images/keynotes/Joerg-Schorer_WEB.jpg"
+                <div class="box"><img class="rounded-circle" src="images/keynotes/Jaspers_Schorer_320x320_2.jpg"
                                       alt="Jörg Schorer">
                     <h3 class="name">Jörg Schorer</h3>
                     <p class="title">Uni-Prof. Dr.</p>
-                    <p class="description">Jörg Schorer von der Carl von Ossietzky Universität Oldenburg (Institut
-                        für Sportwissenschaft) behandelt die Bedeutung von Talent sowie kognitiver Faktoren von
-                        SpielerInnen im Sportspiel.</p>
+                    <p class="description">Jörg Schorer ist der Leiter des Arbeitsbereichs „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a. Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund, dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
                 </div>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Podiumsdiskussion Section -->
+<!-- Hörsaal Section -->
 <section id="podium" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Podiumsdiskussion</h2>
         <p>Diskussion mit SpitzensportlerInnen und führenden TrainernInnen.</p>
-        BILD Hörsaal
+        <img src="images/hoersaal.jpg" alt="Hörsaal der Podiumsdiskussion" class="img-fluid mt-4" style="max-width: 75%; height: auto;">
     </div>
 </section>
 
@@ -240,9 +272,12 @@
 <section id="arbeitskreise" class="section-padding">
     <div class="container text-center">
         <h2>Arbeitskreise</h2>
-        <p>Zahlreiche (themenspezifische) Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele
-            im NawiMedi.</p>
-        BILD NawiMedi
+        <p>Zahlreiche (themenspezifische) Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele im NawiMedi.</p>
+        <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
+            <img src="images/nawimedi1.jpg" alt="NawiMedi 1" style="max-width: 30%; height: auto;">
+            <img src="images/nawimedi2.jpg" alt="NawiMedi 2" style="max-width: 25%; height: auto;">
+            <img src="images/nawimedi3.jpg" alt="NawiMedi 3" style="max-width: 25%; height: auto;">
+        </div>
     </div>
 </section>
 
@@ -251,7 +286,14 @@
     <div class="container text-center">
         <h2>Workshops</h2>
         <p>Praxisworkshops in verschiedenen Sporthallen.</p>
-        BILDER Sporthallen
+        <div class="row justify-content-center">
+            <div class="col-md-4 mb-4">
+                <img src="images/sporthalle1.jpg" class="img-fluid rounded shadow" alt="Sporthalle 1">
+            </div>
+            <div class="col-md-4 mb-4">
+                <img src="images/sporthalle2.jpg" class="img-fluid rounded shadow" alt="Sporthalle 2">
+            </div>
+        </div>
     </div>
 </section>
 
@@ -260,16 +302,26 @@
     <div class="container text-center">
         <h2>Posterpräsentation</h2>
         <p>Posterpräsentation und Kaffeepausen im Hauptgebäude.</p>
-        BILDER Hauptgebäude
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-5 mb-4 d-flex justify-content-center">
+                <img src="images/hauptgebaeude1.jpg" class="img-fluid rounded shadow" alt="Hauptgebäude 1" style="max-height: 400px; object-fit: cover;">
+            </div>
+            <div class="col-md-5 mb-4 d-flex justify-content-center">
+                <img src="images/hauptgebaeude2.jpg" class="img-fluid rounded shadow" alt="Hauptgebäude 2" style="max-height: 400px; object-fit: cover;">
+            </div>
+        </div>
     </div>
 </section>
 
 <!-- Fachleitertagungen Section -->
 <section id="fachleiter" class="bg-light section-padding">
     <div class="container text-center">
-        <h2>FachleiterInnentagungungen und Verband-Symposien</h2>
+        <h2>FachleiterInnentagungen und Verband-Symposien</h2>
         <p>FachleiterInnentagungen (Satelliten-Workshops), Verbands-Symposien.</p>
-        BILDER Langbank und Tischtennis
+        <div class="d-flex justify-content-center align-items-center gap-2">
+            <img src="images/langbank.jpg" class="img-fluid rounded shadow" alt="Langbank" style="max-height: 300px; object-fit: contain;">
+            <img src="images/tischtennis.jpg" class="img-fluid rounded shadow" alt="Tischtennis" style="max-height: 300px; object-fit: contain;">
+        </div>
     </div>
 </section>
 
@@ -283,7 +335,7 @@
         <p>Das Restaurant befindet sich im selben Gebäudekomplex wie das Hockey- und Judoleistungszentrum und das
             Gästehaus der Deutschen Sporthochschule Köln. Es ist fußläufig (ca. 5 Minuten) vom Veranstaltungsort
             entfernt.</p>
-        BILDER Türner
+        <img src="images/tuernner.png" alt="Restaurant Ulrich Türner" class="img-fluid rounded shadow" style="max-width: 100%; height: auto; margin-top: 1rem;">
     </div>
 </section>
 
@@ -293,18 +345,21 @@
         <h2>Mögliches Sportprogramm</h2>
         <p>Mögliches Sportprogramm in der Halle und Frühsport im Kölner Stadtwald.</p>
         <p>Weitere detaillierte Informationen zum Programm folgen zu gegebener Zeit.</p>
-        BILDER Halle und Luftbild
+        <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
+            <img src="images/halle.jpg" alt="Sporthalle" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
+            <img src="images/luftbild.jpg" alt="Luftbild Kölner Stadtwald" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
+        </div>
     </div>
 </section>
 
-<!-- Zeitplan Section -->
+<!-- Zeitplan Section (/css/timeline3.css) -->
 <section id="zeitplan" class="section-padding">
     <div class="container">
         <h2 class="text-center">Zeitplan</h2>
         <ul class="timeline">
             <li class="event">
                 <div class="left-arrow"></div>
-                <div class="time">August 2025</div>
+                <div class="time">Oktober 2025</div>
                 <h3>First Announcement</h3>
                 <div class="description">
                     <p>Schalten der Webpräsenz.</p>
@@ -315,41 +370,42 @@
                 <div class="time text-success">15.12.2025</div>
                 <h3 class="text-success">Beitragsaufruf und Beginn der Anmeldung (Early-Bird)</h3>
                 <div class="description">
-                    <p>Beiträge können <a href="conftool">eingereicht</a> werden und die <a
-                            href="conftool">Anmeldung</a> ist möglich.</p>
+<!--                    <p>Beiträge können <a href="conftool">eingereicht</a> werden und die <a-->
+<!--                            href="conftool">Anmeldung</a> ist möglich.</p>-->
+                    <p>Beiträge können eingereicht werden und die Anmeldung ist möglich.</p>
                 </div>
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time text-danger">01.03.2026</div>
                 <h3 class="text-danger">Einreichungsfrist für Beiträge</h3>
-                <div class="description">
-                    <p>Ende der Beitragseinreichung.</p>
-                </div>
+<!--                <div class="description">-->
+<!--                    <p>Ende der Beitragseinreichung.</p>-->
+<!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time">15.04.2026</div>
                 <h3>Rückmeldung über Gutachten der Beiträge</h3>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+<!--                <div class="description">-->
+<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+<!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time text-danger">31.05.2026</div>
                 <h3 class="text-danger">Ende der Anmeldung (Early-Bird)</h3>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+<!--                <div class="description">-->
+<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+<!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
                 <div class="time text-danger">15.07.2026</div>
-                <h3 class="text-danger">Ende der Anmeldung</h3>
-                <div class="description">
-                    <p>Lorem ipsum dolor sit amet.</p>
-                </div>
+                <h3 class="text-danger">Ende der Anmeldung (Regulärer Tarif)</h3>
+<!--                <div class="description">-->
+<!--                    <p>Lorem ipsum dolor sit amet.</p>-->
+<!--                </div>-->
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
@@ -363,123 +419,86 @@
     </div>
 </section>
 
-
-<!--Timeline2 Section -->
-<section id="timeline2" class="section-padding">
-    <div class="container text-center">
-        <h2 class="text-center">ALTERNATIVES Zeitplan-Layout: Demo-7</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline7">
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="bi bi-rocket-takeoff"></i></div>
-                        <span class="year">AUGUST 2026</span>
-                        <div class="timeline-content">
-                            <h5 class="title">First Announcement</h5>
-                            <p class="description">Schalten der Webpräsenz.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="bi bi-upload"></i></div>
-                        <span class="year">15.12.2025</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Beitragsaufruf und Beginn der Anmeldung (Early-Bird)</h5>
-                            <p class="description">Beiträge können eingereicht werden und die Anmeldung ist möglich.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="bi bi-alarm"></i></div>
-                        <span class="year">01.03.2026</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Einreichungsfrist für Beiträge</h5>
-                            <p class="description">Ende der Beitragseinreichung.</p>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-icon"><i class="bi bi-flag"></i></div>
-                        <span class="year">30.09. - 02.10.2026</span>
-                        <div class="timeline-content">
-                            <h5 class="title">Symposium</h5>
-                            <p class="description">14. Sportspiel-Symposium der dvs</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr>
-
-
-    <div class="container text-center">
-        <h2>ALTERNATIVES Zeitplan-Layout: Demo-9</h2>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="main-timeline9">
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="circle"><span><i class="bi bi-rocket-takeoff"></i></span></div>
-                            <div class="content">
-                                <span class="year">AUGUST 2026</span>
-                                <h4 class="title">First Announcement</h4>
-                                <p class="description">Schalten der Webpräsenz.</p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="circle"><span><i class="bi bi-upload"></i></span></div>
-                            <div class="content">
-                                <span class="year">15.12.2025</span>
-                                <h4 class="title">Beitragsaufruf und Beginn der Anmeldung (Early-Bird)</h4>
-                                <p class="description">Beiträge können <a href="conftool">eingereicht</a> werden und die
-                                    <a
-                                            href="conftool">Anmeldung</a> ist möglich.</p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="circle"><span><i class="bi bi-alarm"></i></span></div>
-                            <div class="content">
-                                <span class="year">01.03.2026</span>
-                                <h4 class="title">Einreichungsfrist für Beiträge</h4>
-                                <p class="description">Ende der Beitragseinreichung.</p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline">
-                        <div class="timeline-content">
-                            <div class="circle"><span><i class="bi bi-flag"></i></span></div>
-                            <div class="content">
-                                <span class="year">30.09. - 02.10.2026</span>
-                                <h4 class="title" Symposium</h4>
-                                <p class="description">14. Sportspiel-Symposium der dvs</p>
-                                <div class="icon"><span></span></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
 <!-- Beitragsformate Section -->
 <section id="beitragsformat" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Beitragsformat</h2>
-        <p> href="#" class="btn btn-primary btn-lg mt-3">Zur Anmeldung</p>
+            <p><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises</p>
+            <p><span>&#8226;</span> Poster</p>
+            <p><span>&#8226;</span> Arbeitskreis</p>
+            <p><span>&#8226;</span> Praxisworkshop</p>
+        <p>Konkrete Hinweise zur Beitragseinreichung folgen.</p>
     </div>
 </section>
 
 <!-- Anmeldung Section -->
 <section id="anmeldung" class="section-padding">
     <div class="container text-center">
-        <h2>Jetzt anmelden</h2>
-        <a href="#" class="btn btn-primary btn-lg mt-3">Zur Anmeldung</a>
+        <h2>Anmeldung</h2>
+        <h3>Teilnahmegebühren</h3>
+        <table class="table table-bordered border-secondary align-middle">
+            <thead>
+            <tr class="table-secondary border-secondary">
+                <th scope="col"></th>
+                <th scope="col">Nicht-Mitglieder</th>
+                <th scope="col">dvs-Mitglieder</th>
+                <th scope="col">Studierende</th>
+            </tr>
+            </thead>
+            <tbody class="table-group-divider">
+            <tr>
+                <td class="table-secondary"><b>Early-Bird Tarif</b><br>
+                    (15.12.2025 - 31.05.2026)</td>
+                <td>205 €</td>
+                <td>165 €</td>
+                <td>100 €</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Regulärer Tarif</b><br>
+                    (01.06.2026 - 15.07.2026)</td>
+                <td>245 €</td>
+                <td>200 €</td>
+                <td>125 €</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Vorortregistrierung</b><br>
+                    (30.09.2026 - 02.10.2026)</td>
+                <td>275 €</td>
+                <td>225 €</td>
+                <td>140 €</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Tagesgäste<br>
+                    Early-Bird Tarif</b></td>
+                <td colspan="3">115 €</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Tagesgäste<br>
+                    Regulärer Tarif</b></td>
+                <td colspan="3">140 €</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Tagesgäste<br>
+                    Vorortregistrierung</b></td>
+                <td colspan="3">155 €</td>
+            </tr>
+            <tr>
+                <td class="table-light"><b>Get-Together Abend</b><br>
+                    (30.09.2026)</td>
+                <td class="table-light" colspan="3">Essen und Getränke auf Selbstzahler*innenbasis<br>
+                    <i>Bei Anmeldung bitte angeben, ob Interesse an einer Teilnahme besteht.</i></td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b>Gesellschaftsabend<br>
+                    -Dinner-</b><br>
+                    (01.10.2026)</td>
+                <td colspan="3">85 €</td>
+            </tr>
+            </tbody>
+        </table>
+
+        <!-- <p>Ab dem 15.12.2025 hier möglich.</p> -->
+        <!-- <a href="#" class="btn btn-primary btn-lg mt-3">Zur Anmeldung (!erst ab 15.12. freischalten!)</a> -->
     </div>
 </section>
 
@@ -489,7 +508,10 @@
         <h2>Veranstaltungsort</h2>
         <h3>Deutsche Sporthochschule Köln</h3>
         <p><a href="https://www.dshs-koeln.de">Deutsche Sporthochschule Köln</a></p>
-        BILDER Sporthochschule
+        <div class="mt-3">
+            <img src="images/sporthochschule1.jpg" alt="Sporthochschule Bild 1" class="img-fluid rounded shadow mb-3" style="max-width: 100%; height: auto;">
+            <img src="images/sporthochschule2.jpg" alt="Sporthochschule Bild 2" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
+        </div>
     </div>
 </section>
 
@@ -497,7 +519,7 @@
 <section id="anreise" class="section-padding">
     <div class="container text-center">
         <h2>Anreise</h2>
-        <p class="mt-3">Deutsche Sporthochschule Köln<br>
+        <p>Deutsche Sporthochschule Köln<br>
             Am Sportpark Müngersdorf 6<br>
             50933 Köln</p>
 
@@ -539,9 +561,77 @@
 <section id="kontakt" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Kontakt</h2>
-        <p class="col-md-3">
-        <div class="social"><a href="mailto:info@sportspiel2026.de"><i class="bi bi-envelope-at"></i>
-            info@sportspiel2026.de</a></div>
+<!--        <div class="social"><i class="icon bi-envelope-at"></i> --><?php //= safe_mail('info', 'sportspiel2026', 'de') ?><!--</div>-->
+        <br>
+        <h5>Organisatorische Leitung (Hauptansprechperson)</h5>
+        <div class="social">Dr. M. Geisen<br>
+<!--            <i class="icon bi-envelope-at"></i> --><?php //= safe_mail('m.geisen', 'dshs-koeln', 'de') ?><!--<br>-->
+            Telefon: +49 221 4982 8735<br>
+
+
+
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Nachricht schreiben</button></div>
+
+<!-- Kontaktformular Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="contactModalLabel">Ihre Nachricht</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+      </div>
+      <div class="modal-body">
+        <div id="formAlert" class="alert d-none" role="alert"></div>
+
+        <form id="contactForm" novalidate>
+          <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
+            <div class="invalid-feedback">Bitte gib deinen Namen (min. 2 Zeichen) an.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">E‑Mail</label>
+            <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
+            <div class="invalid-feedback">Bitte gib eine gültige E‑Mail-Adresse an.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="subject" class="form-label">Betreff</label>
+            <input type="text" class="form-control" id="subject" name="subject" required maxlength="120">
+            <div class="invalid-feedback">Bitte gib einen Betreff an.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="message" class="form-label">Nachricht</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required minlength="10" maxlength="3000"></textarea>
+            <div class="invalid-feedback">Bitte formuliere deine Nachricht (mind. 10 Zeichen).</div>
+          </div>
+
+          <!-- CSRF Token -->
+          <input type="hidden" name="csrf_token" value="<?= htmlspecialchars($csrfToken, ENT_QUOTES) ?>">
+
+          <!-- Honeypot (Leer lassen) -->
+          <div class="hp-field" aria-hidden="true">
+            <label for="company">Firma</label>
+            <input type="text" id="company" name="company" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="d-grid">
+            <button id="submitBtn" type="submit" class="btn btn-primary">
+              <span class="btn-text">Senden</span>
+              <span class="spinner-border spinner-border-sm ms-2 d-none" aria-hidden="true"></span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
         <img src="images/team_800x514.jpg" class="img-fluid" alt="Team-Foto">
     </div>
 </section>
@@ -556,14 +646,78 @@
         <p class="mb-1">Veranstalter:
         <p class="mb-1">dvs-Kommission Sportspiele
         <p class="mb-1">und
-        <p class="mb-0">Deutsche Sporthochschule Köln - Institut für Trainingswissenschaft und Sportinformatik -
-            Abteilung Kognitions- und Sportspielforschung</p>
+        <p class="mb-0">Deutsche Sporthochschule Köln - Institut für Trainingswissenschaft und Sportinformatik - Abteilung Kognitions- und Sportspielforschung</p>
         <p class="mb-1">Deutsche Sporthochschule Köln - Am Sportpark 6 - 50933 Köln</p>
-        <p><a href="mailto:info@sportspiel2026.de" class="text-white">Kontakt</a> - <a href="impressum.html"
-                                                                                       class="text-white">Impressum</a>
-        </p>
+        <p><a href="impressum.php" class="text-white">Impressum</a></p>
+<!--        <p>--><?php //= safe_mail('info', 'sportspiel2026', 'de', 'Kontakt', 'text-white') ?><!-- - <a href="impressum.php" class="text-white">Impressum</a></p>-->
     </div>
 </footer>
+
+<!-- JavaScript zum dynamischen Zusammenbau der E-Mail -->
+<!-- OBSOLET -->
+<!--<script>-->
+<!--    const user = "sales";-->
+<!--    const domain = "meinefirma.de";-->
+<!--    const mail = user + "@" + domain;-->
+<!--    document.getElementById("sales-mail").innerHTML =-->
+<!--        '<a href="mailto:' + mail + '" class="text-danger fw-bold">' + mail + '</a>';-->
+<!--</script>-->
+<!-- OBSOLET -->
+
+<!-- JavaScript Kontaktformular -->
+<script>
+    (function() {
+        const form = document.getElementById('contactForm');
+        const alertBox = document.getElementById('formAlert');
+        const submitBtn = document.getElementById('submitBtn');
+        const spinner = submitBtn.querySelector('.spinner-border');
+        const btnText = submitBtn.querySelector('.btn-text');
+
+        function showAlert(type, message) {
+            alertBox.className = `alert alert-${type}`;
+            alertBox.textContent = message;
+        }
+
+        form.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            // Bootstrap Client-Validation
+            if (!form.checkValidity()) {
+                form.classList.add('was-validated');
+                return;
+            }
+
+            showAlert('info', 'Sende…');
+
+            submitBtn.disabled = true;
+            spinner.classList.remove('d-none');
+            btnText.textContent = 'Senden…';
+
+            try {
+                const formData = new FormData(form);
+                const res = await fetch('send.php', {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'X-Requested-With': 'XMLHttpRequest' }
+                });
+                const data = await res.json();
+
+                if (data.success) {
+                    showAlert('success', data.message || 'Nachricht erfolgreich versendet.');
+                    form.reset();
+                    form.classList.remove('was-validated');
+                } else {
+                    showAlert('danger', data.message || 'Senden fehlgeschlagen.');
+                }
+            } catch (err) {
+                showAlert('danger', 'Netzwerk- oder Serverfehler. Bitte später erneut versuchen.');
+            } finally {
+                submitBtn.disabled = false;
+                spinner.classList.add('d-none');
+                btnText.textContent = 'Senden';
+            }
+        });
+    })();
+</script>
 
 </body>
 

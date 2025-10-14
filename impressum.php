@@ -1,12 +1,14 @@
+<?php
+require_once 'functions.php';
+?>
+
 <!doctype html>
 <html lang="de">
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>14. Sportspiel-Symposium der dvs 2026</title>
     <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/timeline3.css">
     <script src="js/bootstrap.bundle.min.js"></script>
 
     <style>
@@ -22,7 +24,6 @@
 </head>
 
 <body>
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
@@ -37,44 +38,44 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html">Start</a>
+                    <a class="nav-link" href="index.php#">Start</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#willkommen">Willkommen</a>
+                    <a class="nav-link" href="index.php#willkommen">Willkommen</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href=index.html"#programm" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link dropdown-toggle" href="index.php#programm" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">Programm</a>
                     <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.html#keynotes">Keynotes</a></li>
-                        <li><a class="dropdown-item" href="index.html#podium">Podiumsdiskussion</a></li>
-                        <li><a class="dropdown-item" href="index.html#workshops">Workshops</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="index.html#workshops">FachleiterInnentagungen /
-                            Verbands-Symposien</a></li>
+                        <li><a class="dropdown-item" href="index.php#keynotes">Keynotes</a></li>
+                        <li><a class="dropdown-item" href="index.php#podium">Podiumsdiskussion</a></li>
+                        <li><a class="dropdown-item" href="index.php#arbeitskreise">Arbeitskreise</a></li>
+                        <li><a class="dropdown-item" href="index.php#workshops">Workshops</a></li>
+                        <li><a class="dropdown-item" href="index.php#poster">Posterpräsentation</a></li>
+                        <li><a class="dropdown-item" href="index.php#fachleiter">FachleiterInnentagungungen und
+                            Verband-Symposien</a></li>
+                        <li><a class="dropdown-item" href="index.php#gesellschaftsabend">Gesellschaftsabend</a></li>
+                        <li><a class="dropdown-item" href="index.php#sportprogramm">Sportprogramm</a></li>
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#zeitplan">Zeitplan</a>
+                    <a class="nav-link" href="index.php#zeitplan">Zeitplan</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.html#anmeldung">Anmeldung</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="index.html#veranstaltungsort" role="button"
-                       data-bs-toggle="dropdown" aria-expanded="false">Veranstaltungsort</a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="index.html#anreise">Anreise</a></li>
-                    </ul>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#kontakt">Kontakt</a>
+                    <a class="nav-link" href="index.php#beitragsformat">Beitragsformat</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Impressum</a>
-                </li> -->
+                    <a class="nav-link" href="index.php#anmeldung">Anmeldung</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php#veranstaltungsort">Veranstaltungsort</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php#anreise">Anreise</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php#kontakt">Kontakt</a>
+                </li>
             </ul>
         </div>
     </div>
@@ -92,13 +93,13 @@
             50933 Köln</p>
         <p>
             Telefon: +49 221 4982-8570<br>
-            E-Mail: info@sportspiel2026.de<br>
+            E-Mail: <?= safe_mail_text('info', 'sportspiel2026', 'de') ?><br>
         </p>
 
         <p>Inhaltlich Verantwortliche gemäß § 55 Abs. 2 RStV:<br>
             Univ.-Prof. Dr. Stefanie Klatt<br>
             Telefon: +49 221 4982-4312<br>
-            E-Mail: info@sportspiel2026.de</p>
+            E-Mail: <?= safe_mail_text('info', 'sportspiel2026', 'de') ?></p>
 
         <p>Gemäß § 28 BDSG widersprechen wir jeder kommerziellen Verwendung und Weitergabe unserer Daten.</p>
 
