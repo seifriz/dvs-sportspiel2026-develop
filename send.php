@@ -2,9 +2,12 @@
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+// DEBUG
+use PHPMailer\PHPMailer\SMTP;
+//DEBUG
 
 require __DIR__ . '/../vendor/autoload.php';
-require __DIR__ . '/../config.php';
+require __DIR__ . '/config.php';
 
 // Startet Session für CSRF
 session_start();
@@ -13,7 +16,7 @@ session_start();
 header('Content-Type: application/json; charset=utf-8');
 
 // Response-Helfer:
-// - Einheitlicher Rückgabekanal: Immer { success: bool, message: string, ... }.
+// - Einheitlicher Rückgabekanal: Immer { success: bool, message: string, .. }.
 function jsonOut($ok, $msg, $extra = [])
 {
     echo json_encode(array_merge(['success' => $ok, 'message' => $msg], $extra));
