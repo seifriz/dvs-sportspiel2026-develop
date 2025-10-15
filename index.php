@@ -113,6 +113,8 @@ require_once 'functions.php';
         </div>
     </div>
 </nav>
+<!-- Alter für Mail -->
+<div id="pageAlertContainer" class="position-fixed top-0 start-50 translate-middle-x mt-5" style="z-index:1080; min-width: 300px;"></div>
 
 <!-- Hero Section -->
 <header class="hero text-center">
@@ -554,24 +556,24 @@ require_once 'functions.php';
 
         <!-- Kontaktformular Modal -->
         <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="contactModalLabel">Ihre Nachricht</h5>
+                        <h5 class="modal-title" id="contactModalLabel">Nachricht</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
                     </div>
-                    <div class="modal-body">
+                    <div class="modal-body text-start">
                         <div id="formAlert" class="alert d-none" role="alert"></div>
 
                         <form id="contactForm" novalidate>
                             <div class="mb-3">
-                                <label for="name" class="form-label">Name</label>
+                                <label for="name" class="form-label">Ihr Name</label>
                                 <input type="text" class="form-control" id="name" name="name" required minlength="2" maxlength="80" autocomplete="name">
                                 <div class="invalid-feedback">Bitte gib deinen Namen (min. 2 Zeichen) an.</div>
                             </div>
 
                             <div class="mb-3">
-                                <label for="email" class="form-label">E‑Mail</label>
+                                <label for="email" class="form-label">Ihre E‑Mail</label>
                                 <input type="email" class="form-control" id="email" name="email" required autocomplete="email">
                                 <div class="invalid-feedback">Bitte gib eine gültige E‑Mail-Adresse an.</div>
                             </div>
@@ -609,7 +611,6 @@ require_once 'functions.php';
             </div>
         </div>
 
-
         <img src="images/team_800x514.jpg" class="img-fluid" alt="Team-Foto">
     </div>
 </section>
@@ -638,11 +639,57 @@ require_once 'functions.php';
         const submitBtn = document.getElementById('submitBtn');
         const spinner = submitBtn.querySelector('.spinner-border');
         const btnText = submitBtn.querySelector('.btn-text');
+        
+        const modalEl = document.getElementById('contactModal');
+        function clearModalState() {
+            if (form) {
+                form.reset();
+                form.classList.remove('was-validated');
+                form.querySelectorAll('.is-valid, .is-invalid').forEach(el => el.classList.remove('is-valid','is-invalid'));
+            }
+            if (alertBox) {
+                alertBox.className = 'alert d-none';
+                alertBox.textContent = '';
+            }
+        }
+        if (modalEl) {
+            modalEl.addEventListener('show.bs.modal', clearModalState);
+            modalEl.addEventListener('hidden.bs.modal', clearModalState);
+        }
+    
+
+        alertBox && alertBox.classList.add('d-none');
 
         function showAlert(type, message) {
-            alertBox.className = `alert alert-${type}`;
+            alertBox.className = `alert alert-${type} fade show`;
             alertBox.textContent = message;
         }
+
+        // Seite-weite Erfolgsmeldung (außerhalb des Modals)
+        function showPageAlert(type, message, timeout=6000) {
+            const container = document.getElementById('pageAlertContainer');
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type} alert-dismissible fade show shadow`;
+            alert.setAttribute('role', 'alert');
+            alert.textContent = message;
+
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'btn-close';
+            btn.setAttribute('data-bs-dismiss', 'alert');
+            btn.setAttribute('aria-label', 'Schließen');
+            alert.appendChild(btn);
+
+            container.appendChild(alert);
+
+            if (timeout) {
+                setTimeout(() => {
+                    const bsAlert = bootstrap.Alert.getOrCreateInstance(alert);
+                    bsAlert.close();
+                }, timeout);
+            }
+        }
+
 
         form.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -668,7 +715,19 @@ require_once 'functions.php';
                 const data = await res.json();
 
                 if (data.success) {
+                    // Erfolg im Modal anzeigen (kurz), dann Modal schließen
                     showAlert('success', data.message || 'Nachricht erfolgreich versendet.');
+                    // Modal schließen
+                    const modalEl = document.getElementById('contactModal');
+                    try {
+                        const modal = bootstrap.Modal.getOrCreateInstance(modalEl);
+                        // kleine Verzögerung, damit der Nutzer die Rückmeldung im Modal kurz sieht
+                        setTimeout(() => modal.hide(), 600);
+                    } catch(_) {}
+
+                    // Seite-weite Meldung anzeigen
+                    showPageAlert('success', data.message || 'Nachricht erfolgreich versendet.');
+
                     form.reset();
                     form.classList.remove('was-validated');
                 } else {

@@ -100,14 +100,12 @@ try {
 // Inhalt (HTML & Plain)
     $mail->Subject = $subjectSafe;
 
-    $htmlBody = "<p><strong>Neue Kontaktanfrage</strong></p>"
-        . "<p><strong>Name:</strong> " . htmlspecialchars($name, ENT_QUOTES) . "<br>"
-        . "<strong>E‑Mail:</strong> " . htmlspecialchars($email, ENT_QUOTES) . "</p>"
+    $htmlBody = "<p><strong>Name:</strong> " . htmlspecialchars($name, ENT_QUOTES) . "<br>"
+        . "<strong>Mail:</strong> " . htmlspecialchars($email, ENT_QUOTES) . "</p>"
         . "<hr>"
         . "<p>" . $messageSafe . "</p>";
 
-    $plainBody = "Neue Kontaktanfrage\n\n"
-        . "Name: {$name}\n"
+    $plainBody = "Name: {$name}\n"
         . "E‑Mail: {$email}\n\n"
         . "Nachricht:\n{$message}\n";
 
