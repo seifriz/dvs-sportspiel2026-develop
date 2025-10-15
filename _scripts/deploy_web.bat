@@ -9,7 +9,7 @@ setlocal
 set WINSCP="C:\Program Files (x86)\WinSCP\WinSCP.com"
 
 :: Skriptdatei
-set SCRIPT="G:\www\dvs-sportspiel2026-Website\dvs-sportspiel2026-develop\_scripts\deploy_web.txt"
+set SCRIPT="G:\www\dvs-sportspiel2026-Website\dvs-sportspiel2026\_scripts\deploy_web.txt"
 
 :: Logfile
 set LOG="G:\www\dvs-sportspiel2026-Website\___winscp_log_deploy_web.txt"
