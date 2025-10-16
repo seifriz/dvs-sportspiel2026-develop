@@ -80,6 +80,10 @@ try {
 // PHPMailer konfigurieren
     $mail = new PHPMailer(true);
 
+// UTF-8 einschalten
+    $mail->CharSet  = 'UTF-8';
+    $mail->Encoding = 'base64';
+
 // SMTP
     $mail->isSMTP();
     $mail->Host = SMTP_HOST;
