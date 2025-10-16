@@ -93,6 +93,7 @@ require_once 'functions.php';
                     <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">Programm</a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#uberblick">Überblick</a></li>
                         <li><a class="dropdown-item" href="#keynotes">Keynotes</a></li>
                         <li><a class="dropdown-item" href="#podium">Podiumsdiskussion</a></li>
                         <li><a class="dropdown-item" href="#arbeitskreise">Arbeitskreise</a></li>
@@ -130,6 +131,7 @@ require_once 'functions.php';
 <!-- Willkommen Section -->
 <section id="willkommen" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h1>Willkommen zum Symposium</h1>
         <h3>„SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“</h3>
         <p class="mt-3">Im Rahmen des Tagungsthemas „SPIEL – <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“
@@ -151,8 +153,9 @@ require_once 'functions.php';
 </section>
 
 <!-- Programm Section -->
-<section id="programm" class="bg-light section-padding">
+<section id="uberblick" class="bg-light section-padding">
     <div class="container">
+        <h1>&nbsp;</h1>
         <h2 class="text-center">Programm</h2>
         <div class="row text-center mt-3">
             <div class="col">
@@ -194,6 +197,7 @@ require_once 'functions.php';
 <!-- Keynotes Section -->
 <section id="keynotes" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Keynotes</h2>
         <div class="row people">
             <div class="col-md-6 col-lg-4 item">
@@ -236,7 +240,7 @@ require_once 'functions.php';
                 <div class="box"><img class="rounded-circle" src="images/keynotes/Jaspers_Schorer_320x320_2.jpg" alt="Jörg Schorer">
                     <h3 class="name">Jörg Schorer</h3>
                     <p class="title">Uni-Prof. Dr.</p>
-                    <p class="description">Jörg Schorer ist der Leiter des Arbeitsbereichs „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a.
+                    <p class="description">Jörg Schorer ist der Leiter der Abteilung „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a.
                         Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund,
                         dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
                 </div>
@@ -248,6 +252,7 @@ require_once 'functions.php';
 <!-- Hörsaal Section -->
 <section id="podium" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Podiumsdiskussion</h2>
         <p>Diskussion mit SpitzensportlerInnen und führenden TrainernInnen.</p>
         <img src="images/hoersaal.jpg" alt="Hörsaal der Podiumsdiskussion" class="img-fluid mt-4" style="max-width: 75%; height: auto;">
@@ -257,6 +262,7 @@ require_once 'functions.php';
 <!-- Arbeitskreise Section -->
 <section id="arbeitskreise" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Arbeitskreise</h2>
         <p>Zahlreiche (themenspezifische) Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele im NawiMedi.</p>
         <div style="display: flex; justify-content: center; align-items: center; gap: 20px; flex-wrap: wrap;">
@@ -270,6 +276,7 @@ require_once 'functions.php';
 <!-- Workshops Section -->
 <section id="workshops" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Workshops</h2>
         <p>Praxisworkshops in verschiedenen Sporthallen.</p>
         <div class="row justify-content-center">
@@ -286,6 +293,7 @@ require_once 'functions.php';
 <!-- Posterpräsentation Section -->
 <section id="poster" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Posterpräsentation</h2>
         <p>Posterpräsentation und Kaffeepausen im Hauptgebäude.</p>
         <div class="row justify-content-center align-items-center">
@@ -302,6 +310,7 @@ require_once 'functions.php';
 <!-- Fachleitertagungen Section -->
 <section id="fachleiter" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>FachleiterInnentagungen und Verband-Symposien</h2>
         <p>FachleiterInnentagungen (Satelliten-Workshops), Verbands-Symposien.</p>
         <div class="d-flex justify-content-center align-items-center gap-2">
@@ -314,6 +323,7 @@ require_once 'functions.php';
 <!-- Gesellschaftsabend Section -->
 <section id="gesellschaftsabend" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Gesellschaftsabend</h2>
         <p>Gesellschaftsabend am 01.10.2026 (voraussichtlich ab 19:30 Uhr) im Restaurant & Cafeteria Ulrich Türner.</p>
         <p>Guts-Muths-Weg 1<br>
@@ -328,6 +338,7 @@ require_once 'functions.php';
 <!-- Sportprogramm Section -->
 <section id="sportprogramm" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Mögliches Sportprogramm</h2>
         <p>Mögliches Sportprogramm in der Halle und Frühsport im Kölner Stadtwald.</p>
         <p>Weitere detaillierte Informationen zum Programm folgen zu gegebener Zeit.</p>
@@ -341,6 +352,7 @@ require_once 'functions.php';
 <!-- Zeitplan Section (/css/timeline3.css) -->
 <section id="zeitplan" class="section-padding">
     <div class="container">
+        <h1>&nbsp;</h1>
         <h2 class="text-center">Zeitplan</h2>
         <ul class="timeline">
             <li class="event">
@@ -408,6 +420,7 @@ require_once 'functions.php';
 <!-- Beitragsformate Section -->
 <section id="beitragsformat" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Beitragsformat</h2>
         <p><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises</p>
         <p><span>&#8226;</span> Poster</p>
@@ -420,6 +433,7 @@ require_once 'functions.php';
 <!-- Anmeldung Section -->
 <section id="anmeldung" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Anmeldung</h2>
         <h3>Teilnahmegebühren</h3>
         <table class="table table-bordered border-secondary align-middle">
@@ -496,6 +510,7 @@ require_once 'functions.php';
 <!-- Veranstaltungsort Section -->
 <section id="veranstaltungsort" class="bg-light section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Veranstaltungsort</h2>
         <h3>Deutsche Sporthochschule Köln</h3>
         <p><a href="https://www.dshs-koeln.de">Deutsche Sporthochschule Köln</a></p>
@@ -509,6 +524,7 @@ require_once 'functions.php';
 <!-- Anreise Section -->
 <section id="anreise" class="section-padding">
     <div class="container text-center">
+        <h1>&nbsp;</h1>
         <h2>Anreise</h2>
         <p>Deutsche Sporthochschule Köln<br>
             Am Sportpark Müngersdorf 6<br>

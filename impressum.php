@@ -47,6 +47,7 @@ require_once 'functions.php';
                     <a class="nav-link dropdown-toggle" href="index.php#programm" role="button" data-bs-toggle="dropdown"
                        aria-expanded="false">Programm</a>
                     <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="index.php#uberblick">Überblick</a></li>
                         <li><a class="dropdown-item" href="index.php#keynotes">Keynotes</a></li>
                         <li><a class="dropdown-item" href="index.php#podium">Podiumsdiskussion</a></li>
                         <li><a class="dropdown-item" href="index.php#arbeitskreise">Arbeitskreise</a></li>
