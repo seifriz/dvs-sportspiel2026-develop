@@ -560,7 +560,7 @@ require_once 'functions.php';
         <h2>Kontakt</h2>
         <div class="social"><i class="icon bi-envelope-at"></i> <?= safe_mail('info', 'sportspiel2026', 'de') ?></div>
         <br>
-        <h5>Organisatorische Leitung (Hauptansprechperson)</h5>
+        <h5>Konferenzleitung (Hauptansprechperson)</h5>
         <div class="social">Dr. M. Geisen<br>
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal">Nachricht schreiben</button>
             <br>
