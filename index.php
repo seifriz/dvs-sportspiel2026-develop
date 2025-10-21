@@ -121,7 +121,7 @@ require_once 'functions.php';
 <header class="hero text-center">
     <div class="container text-overlay">
         <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
-        <p class="fs-2">„SPIEL - <b>S</b>portspiel-<b>P</b>raxis: <b>I</b>nnovationen, <b>E</b>rkenntnisse & <b>L</b>eistungen“</p>
+        <p class="fs-2">„SPIEL - <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“</p>
         <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
         <!--<a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>-->
     </div>
