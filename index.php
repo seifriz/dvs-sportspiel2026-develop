@@ -108,7 +108,7 @@ require_once 'functions.php';
                 <li class="nav-item"><a class="nav-link" href="#beitragsformat">Beitragsformat</a></li>
                 <li class="nav-item"><a class="nav-link" href="#anmeldung">Anmeldung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a></li>
-                <li class="nav-item"><a class="nav-link" href="#anreise">Anreise</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anreise & Unterkunft">Anreise & Unterkunft</a></li>
                 <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
@@ -522,7 +522,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Anreise Section -->
-<section id="anreise" class="section-padding">
+<section id="anreise & Unterkunft" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anreise</h2>
@@ -551,6 +551,28 @@ require_once 'functions.php';
             <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte Wegführung</a>).</p>
         <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem Campus erhalten Sie auf der Webseite
             <a href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a></p>
+    
+            <hr class="my-5">
+
+        <h2>Unterkunft</h2>
+        <p>Für Teilnehmende steht ein Zimmerkontingent im Gästehaus der Deutschen Sporthochschule Köln zur Verfügung. 
+           Das Gästehaus bietet 45 Einzel- oder Doppelzimmer zu einem Preis von <strong>114 € pro Nacht</strong> (inklusive Frühstück) 
+           sowie Einzelzimmer für <strong>72 € pro Nacht</strong> (inklusive Frühstück).
+           Die Zimmer sind im Zeitraum vom <strong>29.09. bis 02.10.2026</strong> für die Veranstaltungsteilnehmenden reserviert. Wir bitten Sie, Ihre Zimmerreservierung rechtzeitig vorzunehmen, 
+           da die Verfügbarkeit begrenzt ist. Bitte kontaktieren Sie dafür direkt das Gästehaus der Deutschen Sporthochschule Köln. </p>
+        <ul class="list-unstyled">  
+           <li>Adresse: Guts-Muths-Weg 1, 50933 Köln.</li>
+           <li>E-Mail: gaestehaus@­dshs-koeln.de</li>
+           <li>Tel. Rezeption: +49 221 4982-2470</li>
+           <li>Weitere Informationen für das <a href="https://www.dshs-koeln.de/gaestehaus/gaestehaus/"> Gästehaus</a> können sie aus dem Weblink entnehmen.</li>
+        </ul>
+
+        <p>Alternativ finden Sie in der näheren Umgebung weitere Hotels, die gut an die Deutsche Sporthochschule Köln angebunden sind:</p>
+        <ul class="list-unstyled">
+            <li><strong>MEININGER Hotel Köln West</strong> – Stolberger Str. 347, 50933 Köln</li>
+            <li><strong>Essential by Dorint Köln-Junkersdorf</strong> – Aachener Str. 1059–1061, 50858 Köln</li>
+            <li><strong>B&amp;B HOTEL Köln-Ehrenfeld</strong> – Mercedes-Allee 6, 50825 Köln</li>
+        </ul>
     </div>
 </section>
 
