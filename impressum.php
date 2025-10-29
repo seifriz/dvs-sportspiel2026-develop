@@ -87,7 +87,7 @@ require_once 'functions.php';
     <div class="container text-center">
         <h1>Impressum</h1>
         <p class="mt-3">
-            DeutscheSporthochschule Köln<br>
+            Deutsche Sporthochschule Köln<br>
             Institut für Trainingswissenschaft und Sportinformatik<br>
             Abt. II Kognitions- und Sportspielforschung<br>
             Am Sportpark Müngersdorf 6<br>
