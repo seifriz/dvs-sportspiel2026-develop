@@ -60,20 +60,6 @@ require_once 'functions.php';
 <body>
 
 
-<!-- Working Header -->
-<div style="
-  background-color: #f8d7da;
-  color: #721c24;
-  padding: 30px; /* mehr Platz oben/unten */
-  text-align: center;
-  font-weight: bold;
-  border-bottom: 2px solid #f5c6cb;
-  font-size: 2em; /* größere Schrift */
-">
-    ⚠️ Diese Website befindet sich aktuell in Entwicklung. Bitte nicht weitergeben. ⚠️
-</div>
-
-
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
