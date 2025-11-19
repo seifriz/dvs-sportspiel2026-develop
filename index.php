@@ -166,7 +166,7 @@ require_once 'functions.php';
             </div>
             <div class="col">
                 <h5>FachleiterInnentagungungen und Verband-Symposien</h5>
-                <p>.</p>
+                <p>BDFL - Fortbildung<br></p>
             </div>
             <div class="col">
                 <h5>Gesellschaftsabend</h5>
@@ -299,6 +299,7 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2>FachleiterInnentagungen und Verband-Symposien</h2>
         <p>FachleiterInnentagungen (Satelliten-Workshops), Verbands-Symposien.</p>
+        <p>BDFL - Fortbildung<br>
         <div class="d-flex justify-content-center align-items-center gap-2">
             <img src="images/langbank.jpg" class="img-fluid rounded shadow" alt="Langbank" style="max-height: 300px; object-fit: contain;">
             <img src="images/tischtennis.jpg" class="img-fluid rounded shadow" alt="Tischtennis" style="max-height: 300px; object-fit: contain;">
