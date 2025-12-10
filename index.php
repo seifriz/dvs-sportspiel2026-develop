@@ -109,7 +109,7 @@ require_once 'functions.php';
         <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
         <p class="fs-2">„SPIEL - <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“</p>
         <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
-        <!--<a href="#anmeldung" class="btn btn-primary btn-lg mt-3">Jetzt anmelden</a>-->
+        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>
     </div>
 </header>
 
@@ -409,11 +409,21 @@ require_once 'functions.php';
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Beitragsformat</h2>
-        <p><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises</p>
-        <p><span>&#8226;</span> Poster</p>
-        <p><span>&#8226;</span> Arbeitskreis</p>
-        <p><span>&#8226;</span> Praxisworkshop</p>
-        <p>Konkrete Hinweise zur Beitragseinreichung folgen.</p>
+        <table class="table table-bordered border-secondary align-middle">
+            <tbody>
+            <tr>
+                <td class="table-secondary"><b><span>&#8226;</span> Kurzvortrag als Einzelbeitrag innerhalb eines Arbeitskreises<br>
+                                               <span>&#8226;</span> Poster<br>
+                                               <span>&#8226;</span> Praxisworkshop<br></b>
+                </td>
+                <td>Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.</td>
+            </tr>
+            <tr>
+                <td class="table-secondary"><b><span>&#8226;</span> Arbeitskreis</b></td>
+                <td>Bitte Vorschläge (inkl. Titel) an: <?= safe_mail('info', 'sportspiel2026', 'de') ?></td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 </section>
 
@@ -489,8 +499,7 @@ require_once 'functions.php';
             </tbody>
         </table>
 
-        <!-- <p>Ab dem 15.12.2025 hier möglich.</p> -->
-        <!-- <a href="#" class="btn btn-primary btn-lg mt-3">Zur Anmeldung (!erst ab 15.12. freischalten!)</a> -->
+        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>
     </div>
 </section>
 
