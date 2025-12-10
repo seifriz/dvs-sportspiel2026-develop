@@ -72,7 +72,7 @@ require_once 'functions.php';
                     <a class="nav-link" href="index.php#veranstaltungsort">Veranstaltungsort</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php#anreise & unterkunft">Anreise & Unterkunft</a>
+                    <a class="nav-link" href="index.php#anreise">Anreise</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="index.php#kontakt">Kontakt</a>
