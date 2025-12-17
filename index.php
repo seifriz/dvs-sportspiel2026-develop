@@ -660,7 +660,7 @@ require_once 'functions.php';
         <p class="mb-1">dvs-Kommission Sportspiele
         <p class="mb-1">und
         <p class="mb-0">Deutsche Sporthochschule Köln - Institut für Trainingswissenschaft und Sportinformatik - Abteilung Kognitions- und Sportspielforschung</p>
-        <p class="mb-1">Deutsche Sporthochschule Köln - Am Sportpark 6 - 50933 Köln</p>
+        <p class="mb-1">Deutsche Sporthochschule Köln - Am Sportpark Müngersdorf 6 - 50933 Köln</p>
         <p><a href="impressum.php" class="text-white">Impressum</a></p>
     </div>
 </footer>
