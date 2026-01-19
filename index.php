@@ -65,7 +65,7 @@ require_once 'functions.php';
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo">14. Sportspiel-Symposium der dvs
+            <img src="images/50-dvs_50x45.png" alt="dvs-Logo">14. Sportspiel-Symposium der dvs
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -135,6 +135,9 @@ require_once 'functions.php';
             <source src="video/teaser_v4.mp4" type="video/mp4">
             Dein Browser unterstützt das Video-Tag nicht.
         </video>
+        <h6>Die Veranstaltung wird mit finanziellen Mitteln des Bundesinstituts für Sportwissenschaft (BISp) gefördert.<br>
+            Wir danken dem BISp herzlich für die Unterstützung.
+        </h6>
     </div>
 </section>
 
@@ -225,7 +228,7 @@ require_once 'functions.php';
             <div class="col-md-6 col-lg-4 item">
                 <div class="box"><img class="rounded-circle" src="images/keynotes/Jaspers_Schorer_320x320_2.jpg" alt="Jörg Schorer">
                     <h3 class="name">Jörg Schorer</h3>
-                    <p class="title">Uni-Prof. Dr.</p>
+                    <p class="title">Univ.-Prof. Dr.</p>
                     <p class="description">Jörg Schorer ist der Leiter der Abteilung „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a.
                         Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund,
                         dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
@@ -654,7 +657,7 @@ require_once 'functions.php';
 <footer id="footer" class="bg-dark text-white text-center py-4">
     <div class="container">
         <a href="https://www.sportwissenschaft.de" target="_blank">
-            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo" style="height: 45px; margin-bottom: 15px;">
+            <img src="images/50-dvs_50x45.png" alt="dvs-Logo" style="height: 45px; margin-bottom: 15px;">
         </a>
         <p class="mb-1">Veranstalter:
         <p class="mb-1">dvs-Kommission Sportspiele

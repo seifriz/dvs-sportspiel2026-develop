@@ -29,7 +29,7 @@ require_once 'functions.php';
     <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">	 -->
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
-            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo">14. Sportspiel-Symposium der dvs
+            <img src="images/50-dvs_50x45.png" alt="dvs-Logo">14. Sportspiel-Symposium der dvs
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -141,7 +141,7 @@ require_once 'functions.php';
 <footer id="footer" class="bg-dark text-white text-center py-4">
     <div class="container">
         <a href="https://www.sportwissenschaft.de" target="_blank">
-            <img src="images/dvs_Logo_rot.webp" alt="dvs-Logo" style="height: 45px; margin-bottom: 15px;">
+            <img src="images/50-dvs_50x45.png" alt="dvs-Logo" style="height: 45px; margin-bottom: 15px;">
         </a>
         <p class="mb-1">Veranstalter:
         <p class="mb-1">dvs-Kommission Sportspiele
