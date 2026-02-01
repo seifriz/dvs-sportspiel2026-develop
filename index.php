@@ -92,6 +92,7 @@ require_once 'functions.php';
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#zeitplan">Zeitplan</a></li>
                 <li class="nav-item"><a class="nav-link" href="#beitragsformat">Beitragsformat</a></li>
+                <li class="nav-item"><a class="nav-link" href="#nachwuchspreis">Nachwuchs-Auszeichnung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#anmeldung">Anmeldung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a></li>
                 <li class="nav-item"><a class="nav-link" href="#anreise & Unterkunft">Anreise & Unterkunft</a></li>
@@ -179,6 +180,10 @@ require_once 'functions.php';
                 <h5>Mögliches Sportprogramm </h5>
                 <p>In der Halle und Frühsport im Kölner Stadtwald</p>
             </div>
+        </div>
+        <div class="col text-center">
+            <p>Die Veranstaltung beginnt am 30.09.2026 voraussichtlich um 13:00 Uhr mit der Eröffnungsveranstaltung und der ersten Keynote und endet am 02.10.2026 gegen 14:00 Uhr.<br>
+            Das detaillierte Programm inklusive Zeitplan wird noch bekannt gegeben.</p>
         </div>
     </div>
 </section>
@@ -430,8 +435,25 @@ require_once 'functions.php';
     </div>
 </section>
 
+<!-- Nachwuchspreis Section -->
+<section id="nachwuchspreis" class="section-padding">
+    <div class="container text-center">
+        <h1>&nbsp;</h1>
+        <h2>Nachwuchs-Auszeichnung</h2>
+        <p><b>Voraussetzungen für die Bewerbung:</b><br>
+           <span>&#8226;</span> Eingeschriebene Studierende (Promotion, Master, Bachelor)<br>
+           <span>&#8226;</span> Auswahl der Option (Häkchen setzen) ‚Nachwuchs-Auszeichnung‘ bei Einreichung des Abstracts für die Beitragsform ‚Einzelbeitrag‘</p>
+        <p>Eine Jury aus erfahrenen WissenschaftlerInnen wählt unter allen Bewerbungen auf Grundlage der eingereichten Abstracts eine Auswahl exzellenter Einzelbeiträge aus.<br>
+           Die ausgewählten BewerberInnen werden per Mail informiert.<br>
+           Während des Symposiums entscheidet die Jury auf Basis der Kurzvorträge der Nominierten über den/die SiegerIn. Die Bekanntgabe erfolgt im Rahmen der letzten Veranstaltung des Symposiums am Freitag, den 02.10.2026.</p>
+        <p>Mit der Auszeichnung ist die <b>kostenfreie Teilnahme am 15. Sportspiel-Symposium der dvs 2028</b> verbunden!<br>
+            Zudem wird ein <b>Wanderpokal</b> überreicht, der zum nächsten Symposium mitzubringen ist.</p>
+        <p>Die Auszeichnung dient der besonderen Wertschätzung und Förderung des wissenschaftlichen Nachwuchses, der eine zentrale Rolle für die zukünftige Entwicklung der Sportspielforschung einnimmt.</p>
+    </div>
+</section>
+
 <!-- Anmeldung Section -->
-<section id="anmeldung" class="section-padding">
+<section id="anmeldung" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anmeldung</h2>
@@ -507,7 +529,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Veranstaltungsort Section -->
-<section id="veranstaltungsort" class="bg-light section-padding">
+<section id="veranstaltungsort" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Veranstaltungsort</h2>
@@ -521,7 +543,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Anreise Section -->
-<section id="anreise & Unterkunft" class="section-padding">
+<section id="anreise & Unterkunft" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anreise</h2>
@@ -576,7 +598,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Kontakt Section -->
-<section id="kontakt" class="bg-light section-padding">
+<section id="kontakt" class="section-padding">
     <div class="container text-center">
         <h2>Kontakt</h2>
         <div class="social"><i class="icon bi-envelope-at"></i> <?= safe_mail('info', 'sportspiel2026', 'de') ?></div>
