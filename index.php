@@ -136,9 +136,10 @@ require_once 'functions.php';
             <source src="video/teaser_v4.mp4" type="video/mp4">
             Dein Browser unterstützt das Video-Tag nicht.
         </video>
-        <h6>Die Veranstaltung wird mit finanziellen Mitteln des Bundesinstituts für Sportwissenschaft (BISp) gefördert.<br>
-            Wir danken dem BISp herzlich für die Unterstützung.
-        </h6>
+        <h4>Die Veranstaltung wird mit finanziellen Mitteln durch das Bundesinstitut für Sportwissenschaft (BISp) sowie durch den Bund Deutscher Fußball-Lehrer e. V. (BDFL) gefördert<br>
+            <br>
+            Wir danken dem BISp und dem BDFL herzlich für die Unterstützung!
+        </h4>
     </div>
 </section>
 
@@ -154,7 +155,7 @@ require_once 'functions.php';
             </div>
             <div class="col">
                 <h5>Podiumsdiskussion</h5>
-                <p>Diskussion mit SpitzensportlerInnen und führenden TrainernInnen.</p>
+                <p>Diskussion mit ExpertInnen aus der Sportspielpraxis und führenden TrainerInnen zum Thema "Talentsichtung und -förderung in den Sportspielen".</p>
             </div>
             <div class="col">
                 <h5>Arbeitskreise</h5>
@@ -209,6 +210,9 @@ require_once 'functions.php';
                         Basketballbundesliga der Herren in Deutschland. Seit der Saison 2024-25 ist er für die
                         easyCredit Basket Ballbundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
                         setzt er sich mit SchiedsrichterInnen im Sportspiel auseinander.</p>
+                    <p> <strong> Titel seiner Keynote:
+                        „Sportwissenschaftlich informierte Leistungsentwicklung im Hochleistungssystem: Beurteilung, Monitoring und Management von Spitzenschiedsrichtern in der easyCredit BBL“ </strong> </p>
+ 
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
@@ -228,6 +232,8 @@ require_once 'functions.php';
                                 href="https://www.dshs-koeln.de/institut-fuer-soziologie-und-genderforschung/abteilung-sportsoziologie/forschung/qualift-trainerinnen-qualifizierung-von-frauen-fuer-den-trainerberuf/">BISp-geförderten
                             Kooperationsprojekt zur Qualifizierung und den Karrierewegen von Trainerinnen im
                             deutschen Spitzensport</a> vor.</p>
+                    <p> <strong> Titel ihrer Keynote:
+                            „Trainerinnen im Fokus: strukturelle Herausforderungen und innovative Lösungsansätze für den Leistungssport“ </strong> </p>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 item">
@@ -237,6 +243,8 @@ require_once 'functions.php';
                     <p class="description">Jörg Schorer ist der Leiter der Abteilung „Sport und Bewegung“ an der Carl von Ossietzky Universität Oldenburg. Seine Forschungsschwerpunkte sind u.a.
                         Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund,
                         dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
+                    <p> <strong> Titel seiner Keynote:
+                        „Talent im Sportspiel – Praxis, Innovationen und Erkenntnisse“ </strong> </p>
                 </div>
             </div>
         </div>
@@ -248,7 +256,11 @@ require_once 'functions.php';
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Podiumsdiskussion</h2>
-        <p>Diskussion mit SpitzensportlerInnen und führenden TrainernInnen.</p>
+		<h4>Thema: „Talentsichtung und -förderung in den Sportspielen“</h4>
+        <p>Daran beteiligt sein werden:<br>
+           1. Mitglied aus dem Bund Deutscher Fußball-Lehrer e. V. (BDFL)<br>
+           2. TrainerIn/ExpertIn aus dem Deutschen Handballbund e. V. (DHB)<br>
+           3. TrainerIn/ExpertIn aus dem Deutschen Volleyball-Verband e. V. (DVV</p>
         <img src="images/hoersaal.jpg" alt="Hörsaal der Podiumsdiskussion" class="img-fluid mt-4" style="max-width: 75%; height: auto;">
     </div>
 </section>
@@ -370,7 +382,7 @@ require_once 'functions.php';
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
-                <div class="time text-danger">01.03.2026</div>
+                <div class="time text-danger">31.03.2026</div>
                 <h3 class="text-danger">Einreichungsfrist für Beiträge</h3>
                 <!--                <div class="description">-->
                 <!--                    <p>Ende der Beitragseinreichung.</p>-->
@@ -378,7 +390,7 @@ require_once 'functions.php';
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
-                <div class="time">15.04.2026</div>
+                <div class="time">Anfang Mai 2026</div>
                 <h3>Rückmeldung über Gutachten der Beiträge</h3>
                 <!--                <div class="description">-->
                 <!--                    <p>Lorem ipsum dolor sit amet.</p>-->
@@ -553,7 +565,8 @@ require_once 'functions.php';
         <h3>Mit dem Auto</h3>
         <p>Sie finden die Deutsche Sporthochschule in Köln-Müngersdorf, direkt am Sportpark Müngersdorf und dem
             RheinEnergie Stadion. Sie erreichen uns über die A1, Autobahnausfahrt Köln-Lövenich. Folgen Sie der
-            Beschilderung zum RheinEnergieStadion bis zum Hinweisschild Deutsche Sporthochschule.</p>
+            Beschilderung zum RheinEnergieStadion bis zum Hinweisschild Deutsche Sporthochschule.<br>
+			Parkplätze befinden sich in der Straße Am Sportpark Müngersdorf sowie gegenüber des RheinEnergie Stadions (Junkersdorfer Str./Jahnwiese).</p>
         <h3>Mit öffentlichen Verkehrsmitteln</h3>
         <p>Stadtbahn Linie 1 - Junkersdorf/Weiden (bzw. Brück/Bensberg bei Einstieg Haltestelle Weiden-West) oder
             Busse der KVB-Linien 141 / 143 / 144, Haltestelle Junkersdorf/Sporthochschule oder Haltestelle
