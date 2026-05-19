@@ -580,12 +580,13 @@ require_once 'functions.php';
             Bahnhof Köln-Deutz steigen Sie direkt in die Stadtbahn Linie 1 (Richtung Junkersdorf/Weiden).</p>
         <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Campusplan_DSHS.pdf">Lageplan</a>.
             Um von der Haltestelle Junkersdorf/Sporthochschule auf unseren Campus zu kommen, nutzen Sie bitte die Straße Am Sportpark
-            Müngersdorf. Der Fußweg zwischen der Straße Am Römerhof und dem Gebäude mit der Nummer 6 ist derzeit
+            Müngersdorf.
+            <!-- Der Fußweg zwischen der Straße Am Römerhof und dem Gebäude mit der Nummer 6 ist derzeit
             aufgrund von Baumaßnahmen gesperrt (siehe
-            <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte Wegführung</a>).</p>
-        <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem Campus erhalten Sie auf der Webseite
-            <a href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a></p>
-    
+            <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Baustellen/DSHS-Lageplan_INFO-SPERRUNG.pdf">Karte Wegführung</a>).</p>-->
+<!--        <p>Weitere Informationen zu barrierefreien Gebäudezugängen, Angeboten und Unterstützungsmöglichkeiten auf dem Campus erhalten Sie auf der Webseite
+            <a href="https://www.dshs-koeln.de/hochschule/barrierefreie-hochschule/">DSHS Köln.</a>-->
+            </p>
             <hr class="my-5">
 
         <h2>Unterkunft</h2>
@@ -598,7 +599,7 @@ require_once 'functions.php';
            <li>Adresse: Guts-Muths-Weg 1, 50933 Köln.</li>
            <li>E-Mail: gaestehaus@­dshs-koeln.de</li>
            <li>Tel. Rezeption: +49 221 4982-2470</li>
-           <li>Weitere Informationen für das <a href="https://www.dshs-koeln.de/gaestehaus/gaestehaus/"> Gästehaus</a> können sie aus dem Weblink entnehmen.</li>
+           <!--<li>Weitere Informationen für das <a href="https://www.dshs-koeln.de/gaestehaus/gaestehaus/"> Gästehaus</a> können sie aus dem Weblink entnehmen.</li>-->
         </ul>
 
         <p>Alternativ finden Sie in der näheren Umgebung weitere Hotels, die gut an die Deutsche Sporthochschule Köln angebunden sind:</p>
