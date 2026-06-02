@@ -257,10 +257,35 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2>Podiumsdiskussion</h2>
 		<h4>Thema: „Talentsichtung und -förderung in den Sportspielen“</h4>
-        <p>Daran beteiligt sein werden:<br>
-           1. Mitglied aus dem Bund Deutscher Fußball-Lehrer e. V. (BDFL)<br>
-           2. TrainerIn/ExpertIn aus dem Deutschen Handballbund e. V. (DHB)<br>
-           3. TrainerIn/ExpertIn aus dem Deutschen Volleyball-Verband e. V. (DVV</p>
+        <p>Daran beteiligt sein werden:</p>
+        <div class="row people">
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Oliver_Höner_320x320.jpg" alt="Oliver Höner">
+                    <h3 class="name">Oliver Höner</h3>
+                    <p class="title">Univ.-Prof. Dr.</p>
+                    <p class="title">Bund Deutscher Fußball-Lehrer e. V. (BDFL)</p>
+                    <p class="description">Prof. Dr. Oliver Höner ist seit 2022 Direktor des Instituts für Sportwissenschaft an der Eberhard Karls Universität Tübingen und leitet dort seit 2007 den Lehrstuhl „Sportpsychologie und Forschungsmethoden“. Seine vorherigen universitären Stationen waren die sportwissenschaftlichen Institute in Bielefeld (1991 – 2004; Studium und Promotion) und Mainz (2004 – 2007; Juniorprofessur). Er ist Inhaber der UEFA-A-Lizenz und Vizepräsident für Wissenschaft und Methodik des Bundes Deutscher Fußball-Lehrer („BDFL“). Darüber hinaus ist er Vorsitzender des Kuratoriums für den DOSB-Wissenschaftspreis.
+                        Oliver Höners sportspielbezogene Forschung beschäftigt sich mit Themen wie der perzeptuell-kognitiven und Entscheidungskompetenz im Sportspielhandeln, der Identifikation und Entwicklung von Talenten, sowie Fragen des Coachings im Sport und der Trainerentwicklung. Seine Dissertation zum Entscheidungshandeln im Fußball wurde 2005 mit dem DOSB-Wissenschaftspreis (damals Carl-Diem-Preis) ausgezeichnet, dem renommiertesten Preis der deutschen Sportwissenschaft. Neben „klassischen“ Forschungsprojekten, die u.a. vom BISp oder der DFG gefördert wurden, stehen anwendungsnahe und langfristige Projekte zu Talentförderprogrammen im Mittelpunkt seiner Forschung. Diese Projekte werden seit über 10 Jahren in enger Kooperation mit Partnern wie dem DFB, der DFB-Akademie oder dem Nachwuchsleistungszentrum des VfB Stuttgart durchgeführt.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Carsten_Klavehn_320x320.jpg" alt="Carsten Klavehn">
+                    <h3 class="name">Carsten Klavehn</h3>
+                    <p class="title"></p>
+                    <p class="title">Deutscher Handballbund e.V. (DHB)</p>
+                    <p class="description">Carsten Klavehn ist seit 2018 Talentcoach des DHB. Zu seinen zentralen Aufgaben gehören insbesondere die Organisation, Durchführung und Analyse von Talentsichtungsmaßnahmen auf Ebene des Dachverbandes. Darüber hinaus betreut er die jüngsten Nationalmannschaften des DHB im weiblichen und männlichen Bereich. Damit trägt er maßgeblich Verantwortung für die ersten Schritte der Talentförderung auf Nationalmannschaftsebene im deutschen Handball.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Michael_Warm_320x320.jpg" alt="Michael Warm">
+                    <h3 class="name">Michael Warm</h3>
+                    <p class="title"></p>
+                    <p class="title">Deutscher Volleyball-Verband e. V. (DVV)</p>
+                    <p class="description">Michael Warm ist seit einigen Jahren Chef-Bundestrainer Nachwuchs beim Deutschen Volleyball-Verband (DVV) für Volleyball und Beachvolleyball beider Geschlechter. Seine langjährige Erfahrung sammelte er auf allen Ebenen des Nachwuchstrainings – sowohl an Schulen als auch in klassischen Vereinen – bis hin zur Arbeit an Bundesstützpunkten. Darüber hinaus war er viele Jahre im Profibereich tätig, unter anderem als Cheftrainer in der Champions League sowie auf Nationalmannschaftsebene bis hin zu Weltmeisterschaften. Diese Erfahrungen ermöglichen ihm einen sehr umfassenden Blick darauf, wohin Kinder- und Jugendtraining führen kann, aber auch darauf, welche Herausforderungen in den verschiedenen Altersstufen bestehen, um Kinder zu begeistern und ihnen zugleich einen zielgerichteten Weg aufzuzeigen.</p>
+                </div>
+            </div>
+        </div>
+
         <img src="images/hoersaal.jpg" alt="Hörsaal der Podiumsdiskussion" class="img-fluid mt-4" style="max-width: 75%; height: auto;">
     </div>
 </section>
@@ -474,9 +499,10 @@ require_once 'functions.php';
             <thead>
             <tr class="table-secondary border-secondary">
                 <th scope="col"></th>
-                <th scope="col">Nicht-Mitglieder</th>
-                <th scope="col">dvs-Mitglieder</th>
-                <th scope="col">Studierende</th>
+                <th scope="col">Nicht-Mitglieder<br>&nbsp;</th>
+                <th scope="col">dvs-Mitglieder<br>&nbsp;</th>
+                <th scope="col">Studierende<br>&nbsp;</th>
+                <th scope="col">SchülerInnen<br>(PraktikantInnen)</th>
             </tr>
             </thead>
             <tbody class="table-group-divider">
@@ -487,6 +513,7 @@ require_once 'functions.php';
                 <td>205 €</td>
                 <td>165 €</td>
                 <td>100 €</td>
+                <td>75 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Regulärer Tarif</b><br>
@@ -495,6 +522,7 @@ require_once 'functions.php';
                 <td>245 €</td>
                 <td>200 €</td>
                 <td>125 €</td>
+                <td>95 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Vorortregistrierung</b><br>
@@ -503,27 +531,28 @@ require_once 'functions.php';
                 <td>275 €</td>
                 <td>225 €</td>
                 <td>140 €</td>
+                <td>110 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
                         Early-Bird Tarif</b></td>
-                <td colspan="3">115 €</td>
+                <td colspan="4">115 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
                         Regulärer Tarif</b></td>
-                <td colspan="3">140 €</td>
+                <td colspan="4">140 €</td>
             </tr>
             <tr>
                 <td class="table-secondary"><b>Tagesgäste<br>
                         Vorortregistrierung</b></td>
-                <td colspan="3">155 €</td>
+                <td colspan="4">155 €</td>
             </tr>
             <tr>
                 <td class="table-light"><b>Get-Together Abend</b><br>
                     (30.09.2026)
                 </td>
-                <td class="table-light" colspan="3">Essen und Getränke auf SelbstzahlerInnenbasis<br>
+                <td class="table-light" colspan="4">Essen und Getränke auf SelbstzahlerInnenbasis<br>
                     <i>Bei Anmeldung bitte angeben, ob Interesse an einer Teilnahme besteht.</i></td>
             </tr>
             <tr>
@@ -531,7 +560,7 @@ require_once 'functions.php';
                         -Dinner-</b><br>
                     (01.10.2026)
                 </td>
-                <td colspan="3">85 €</td>
+                <td colspan="4">85 €</td>
             </tr>
             </tbody>
         </table>
