@@ -55,7 +55,7 @@ require_once 'functions.php';
                         <li><a class="dropdown-item" href="index.php#poster">Posterpräsentation</a></li>
                         <li><a class="dropdown-item" href="index.php#fachleiter">FachleiterInnentagungungen und Verband-Symposien</a></li>
                         <li><a class="dropdown-item" href="index.php#gesellschaftsabend">Gesellschaftsabend</a></li>
-                        <li><a class="dropdown-item" href="index.php#sportprogramm">Sportprogramm</a></li>
+                        <li><a class="dropdown-item" href="index.php#gettogether">Get-Together Abend</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="index.php#zeitplan">Zeitplan</a></li>

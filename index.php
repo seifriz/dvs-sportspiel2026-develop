@@ -87,7 +87,7 @@ require_once 'functions.php';
                         <li><a class="dropdown-item" href="#poster">Posterpräsentation</a></li>
                         <li><a class="dropdown-item" href="#fachleiter">FachleiterInnentagungungen und Verband-Symposien</a></li>
                         <li><a class="dropdown-item" href="#gesellschaftsabend">Gesellschaftsabend</a></li>
-                        <li><a class="dropdown-item" href="#sportprogramm">Sportprogramm</a></li>
+                        <li><a class="dropdown-item" href="#gettogether">Get-Together Abend</a></li>
                     </ul>
                 </li>
                 <li class="nav-item"><a class="nav-link" href="#zeitplan">Zeitplan</a></li>
@@ -357,7 +357,7 @@ require_once 'functions.php';
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Gesellschaftsabend</h2>
-        <p>Gesellschaftsabend am 01.10.2026 (voraussichtlich ab 19:30 Uhr) im Restaurant & Cafeteria Ulrich Türner.</p>
+        <p>Gesellschaftsabend am 01.10.2026 (19:30 Uhr) im Restaurant & Cafeteria Ulrich Türner.</p>
         <p>Guts-Muths-Weg 1<br>
             50933 Köln</p>
         <p>Das Restaurant befindet sich im selben Gebäudekomplex wie das Hockey- und Judoleistungszentrum und das
@@ -367,22 +367,34 @@ require_once 'functions.php';
     </div>
 </section>
 
-<!-- Sportprogramm Section -->
-<section id="sportprogramm" class="bg-light section-padding">
+<!-- gettogether Section -->
+<section id="gettogether" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
-        <h2>Mögliches Sportprogramm</h2>
-        <p>Mögliches Sportprogramm in der Halle und Frühsport im Kölner Stadtwald.</p>
-        <p>Weitere detaillierte Informationen zum Programm folgen zu gegebener Zeit.</p>
+        <h2>Get-Together Abend</h2>
+        <p>Get-Together Abend am 30.09.2026 (ab 20:00 Uhr) - Essen und Getränke auf SelbstzahlerInnenbasis - in der Gastronomie des KTHC Stadion Rot-Weiss e.V.</p>
+        <p>Olympiaweg 9</br>
+           50933 Köln</p>
+        <p>Die Gastronomie ist fußläufig (ca. 5 Minuten) vom Veranstaltungsort entfernt.</p>
+    </div>
+</section>
+
+<!-- Sportprogramm Section -->
+<section id="sportprogramm" class="section-padding">
+    <div class="container text-center">
+        <h1>&nbsp;</h1>
+        <h2>Mögliches Sporttreiben</h2>
+        <p>Für diejenigen, die während der Tagung selbst aktiv werden möchten:
+            Die Deutsche Sporthochschule Köln liegt direkt am Kölner Stadtwald und in unmittelbarer Nähe des RheinEnergie Stadions; eine Umgebung, die ideale Möglichkeiten für Bewegung an der frischen Luft bietet. Der weitläufige Stadtwald mit seinen schattigen Wegen, Wiesen und Weihern eignet sich hervorragend für eine morgendliche oder abendliche Laufrunde. Auch rund um das Stadiongelände und die Jahnwiesen finden sich attraktive, überwiegend flache Laufstrecken.
+            Hinweis: Diese Aktivitäten sind kein offizieller Bestandteil des Tagungsprogramms. Die Infos dienen lediglich als Anregung für individuelle sportliche Aktivitäten in der freien Zeit.</p>
         <div class="d-flex justify-content-center gap-3 mt-3 flex-wrap">
-            <img src="images/halle.jpg" alt="Sporthalle" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
             <img src="images/luftbild.jpg" alt="Luftbild Kölner Stadtwald" class="img-fluid rounded shadow" style="max-width: 45%; height: auto;">
         </div>
     </div>
 </section>
 
 <!-- Zeitplan Section (/css/timeline3.css) -->
-<section id="zeitplan" class="section-padding">
+<section id="zeitplan" class="bg-light section-padding">
     <div class="container">
         <h1>&nbsp;</h1>
         <h2 class="text-center">Zeitplan</h2>
@@ -431,7 +443,7 @@ require_once 'functions.php';
             </li>
             <li class="event">
                 <div class="left-arrow"></div>
-                <div class="time text-danger">15.07.2026</div>
+                <div class="time text-danger">15.08.2026</div>
                 <h3 class="text-danger">Ende der Anmeldung (Regulärer Tarif)</h3>
                 <!--                <div class="description">-->
                 <!--                    <p>Lorem ipsum dolor sit amet.</p>-->
@@ -450,7 +462,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Beitragsformate Section -->
-<section id="beitragsformat" class="bg-light section-padding">
+<section id="beitragsformat" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Beitragsformat</h2>
@@ -473,7 +485,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Nachwuchspreis Section -->
-<section id="nachwuchspreis" class="section-padding">
+<section id="nachwuchspreis" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Nachwuchs-Auszeichnung</h2>
@@ -490,7 +502,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Anmeldung Section -->
-<section id="anmeldung" class="bg-light section-padding">
+<section id="anmeldung" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anmeldung</h2>
@@ -517,7 +529,7 @@ require_once 'functions.php';
             </tr>
             <tr>
                 <td class="table-secondary"><b>Regulärer Tarif</b><br>
-                    (01.06. - 15.07.2026)
+                    (01.06. - 15.08.2026)
                 </td>
                 <td>245 €</td>
                 <td>200 €</td>
@@ -570,7 +582,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Veranstaltungsort Section -->
-<section id="veranstaltungsort" class="section-padding">
+<section id="veranstaltungsort" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Veranstaltungsort</h2>
@@ -584,7 +596,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Anreise Section -->
-<section id="anreise & Unterkunft" class="bg-light section-padding">
+<section id="anreise & Unterkunft" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anreise</h2>
@@ -641,7 +653,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Kontakt Section -->
-<section id="kontakt" class="section-padding">
+<section id="kontakt" class="bg-light section-padding">
     <div class="container text-center">
         <h2>Kontakt</h2>
         <div class="social"><i class="icon bi-envelope-at"></i> <?= safe_mail('info', 'sportspiel2026', 'de') ?></div>
