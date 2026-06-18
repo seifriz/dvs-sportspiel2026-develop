@@ -177,14 +177,6 @@ require_once 'functions.php';
                 <h5>Gesellschaftsabend</h5>
                 <p>Im Restaurant & Cafeteria Ulrich Türner.</p>
             </div>
-            <div class="col">
-                <h5>Mögliches Sportprogramm </h5>
-                <p>In der Halle und Frühsport im Kölner Stadtwald</p>
-            </div>
-        </div>
-        <div class="col text-center">
-            <p>Die Veranstaltung beginnt am 30.09.2026 voraussichtlich um 13:00 Uhr mit der Eröffnungsveranstaltung und der ersten Keynote und endet am 02.10.2026 gegen 14:00 Uhr.<br>
-            Das detaillierte Programm inklusive Zeitplan wird noch bekannt gegeben.</p>
         </div>
     </div>
 </section>
@@ -259,16 +251,16 @@ require_once 'functions.php';
 		<h4>Thema: „Talentsichtung und -förderung in den Sportspielen“</h4>
         <p>Daran beteiligt sein werden:</p>
         <div class="row people">
-            <div class="col-md-6 col-lg-4 item">
+            <div class="col-md-6 col-lg-3 item">
                 <div class="box"><img class="rounded-circle" src="images/podium/Oliver_Höner_320x320.jpg" alt="Oliver Höner">
                     <h3 class="name">Oliver Höner</h3>
                     <p class="title">Univ.-Prof. Dr.</p>
-                    <p class="title">Bund Deutscher Fußball-Lehrer e. V. (BDFL)</p>
+                    <p class="title">Bund Deutscher Fußball-Lehrer e.V. (BDFL)</p>
                     <p class="description">Prof. Dr. Oliver Höner ist seit 2022 Direktor des Instituts für Sportwissenschaft an der Eberhard Karls Universität Tübingen und leitet dort seit 2007 den Lehrstuhl „Sportpsychologie und Forschungsmethoden“. Seine vorherigen universitären Stationen waren die sportwissenschaftlichen Institute in Bielefeld (1991 – 2004; Studium und Promotion) und Mainz (2004 – 2007; Juniorprofessur). Er ist Inhaber der UEFA-A-Lizenz und Vizepräsident für Wissenschaft und Methodik des Bundes Deutscher Fußball-Lehrer („BDFL“). Darüber hinaus ist er Vorsitzender des Kuratoriums für den DOSB-Wissenschaftspreis.
                         Oliver Höners sportspielbezogene Forschung beschäftigt sich mit Themen wie der perzeptuell-kognitiven und Entscheidungskompetenz im Sportspielhandeln, der Identifikation und Entwicklung von Talenten, sowie Fragen des Coachings im Sport und der Trainerentwicklung. Seine Dissertation zum Entscheidungshandeln im Fußball wurde 2005 mit dem DOSB-Wissenschaftspreis (damals Carl-Diem-Preis) ausgezeichnet, dem renommiertesten Preis der deutschen Sportwissenschaft. Neben „klassischen“ Forschungsprojekten, die u.a. vom BISp oder der DFG gefördert wurden, stehen anwendungsnahe und langfristige Projekte zu Talentförderprogrammen im Mittelpunkt seiner Forschung. Diese Projekte werden seit über 10 Jahren in enger Kooperation mit Partnern wie dem DFB, der DFB-Akademie oder dem Nachwuchsleistungszentrum des VfB Stuttgart durchgeführt.</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 item">
+            <div class="col-md-6 col-lg-3 item">
                 <div class="box"><img class="rounded-circle" src="images/podium/Carsten_Klavehn_320x320.jpg" alt="Carsten Klavehn">
                     <h3 class="name">Carsten Klavehn</h3>
                     <p class="title"></p>
@@ -276,12 +268,20 @@ require_once 'functions.php';
                     <p class="description">Carsten Klavehn ist seit 2018 Talentcoach des DHB. Zu seinen zentralen Aufgaben gehören insbesondere die Organisation, Durchführung und Analyse von Talentsichtungsmaßnahmen auf Ebene des Dachverbandes. Darüber hinaus betreut er die jüngsten Nationalmannschaften des DHB im weiblichen und männlichen Bereich. Damit trägt er maßgeblich Verantwortung für die ersten Schritte der Talentförderung auf Nationalmannschaftsebene im deutschen Handball.</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-4 item">
+            <div class="col-md-6 col-lg-3 item">
                 <div class="box"><img class="rounded-circle" src="images/podium/Michael_Warm_320x320.jpg" alt="Michael Warm">
                     <h3 class="name">Michael Warm</h3>
                     <p class="title"></p>
-                    <p class="title">Deutscher Volleyball-Verband e. V. (DVV)</p>
+                    <p class="title">Deutscher Volleyball-Verband e.V. (DVV)</p>
                     <p class="description">Michael Warm ist seit einigen Jahren Chef-Bundestrainer Nachwuchs beim Deutschen Volleyball-Verband (DVV) für Volleyball und Beachvolleyball beider Geschlechter. Seine langjährige Erfahrung sammelte er auf allen Ebenen des Nachwuchstrainings – sowohl an Schulen als auch in klassischen Vereinen – bis hin zur Arbeit an Bundesstützpunkten. Darüber hinaus war er viele Jahre im Profibereich tätig, unter anderem als Cheftrainer in der Champions League sowie auf Nationalmannschaftsebene bis hin zu Weltmeisterschaften. Diese Erfahrungen ermöglichen ihm einen sehr umfassenden Blick darauf, wohin Kinder- und Jugendtraining führen kann, aber auch darauf, welche Herausforderungen in den verschiedenen Altersstufen bestehen, um Kinder zu begeistern und ihnen zugleich einen zielgerichteten Weg aufzuzeigen.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Leonie Wagner_320x320.jpg" alt="Leonie Wagner">
+                    <h3 class="name">Leonie Wagner</h3>
+                    <p class="title"></p>
+                    <p class="title">Deutscher Kanu-Verband e.V. (DKV)</p>
+                    <p class="description">Leonie Wagner war von 2013 bis 2025 Mitglied der deutschen Nationalmannschaft im Kanupolo. In dieser Zeit konnte sie gemeinsam mit Ihren Teams drei Weltmeistertitel, fünf Europameistertitel sowie zwei Goldmedaillen und eine Silbermedaille bei den World Games gewinnen. Nach ihrem Bachelorstudium in Sport und Leistung sowie dem Masterstudium Leistungstraining und Coaching im Leistungssport an der Deutschen Sporthochschule Köln übernahm sie 2024 die Position der Cheftrainerin im Deutschen Kanu-Verband. In den Jahren 2024 und 2025 durfte sie mit Unterstützung und Vertrauen des Deutschen Kanu-Verbandes sowohl die Rolle als Nationalspielerin als auch die Rolle als Cheftrainerin ausüben. Diese Doppelfunktion ermöglichte ihr einen besonderen Blick auf den Leistungssport – sowohl aus der Perspektive der Athletin als auch aus der der verantwortlichen Trainerin. Von Beginn an war dabei vereinbart, dass sie sich nach ihrer aktiven Karriere vollständig auf die Cheftrainerrolle konzentrieren werde. Seit 2026 ist sie ausschließlich als Cheftrainerin tätig. Ihr Ziel ist es, die sportliche Entwicklung der AthletInnen zu fördern, die Strukturen im deutschen Kanupolo weiterzuentwickeln und die Zukunft des Sports aktiv mitzugestalten.</p>
                 </div>
             </div>
         </div>
