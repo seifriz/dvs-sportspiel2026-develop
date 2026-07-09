@@ -76,16 +76,15 @@ require_once 'functions.php';
                 <li class="nav-item"><a class="nav-link" href="#">Start</a></li>
                 <li class="nav-item"><a class="nav-link" href="#willkommen">Willkommen</a></li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown"
-                       aria-expanded="false">Programm</a>
+                    <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programm</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#uberblick">Überblick</a></li>
                         <li><a class="dropdown-item" href="#keynotes">Keynotes</a></li>
-                        <li><a class="dropdown-item" href="#podium">Podiumsdiskussion</a></li>
+                        <li><a class="dropdown-item" href="#podium">Podiumsdiskussionen</a></li>
                         <li><a class="dropdown-item" href="#arbeitskreise">Arbeitskreise</a></li>
                         <li><a class="dropdown-item" href="#workshops">Workshops</a></li>
                         <li><a class="dropdown-item" href="#poster">Posterpräsentation</a></li>
-                        <li><a class="dropdown-item" href="#fachleiter">FachleiterInnentagungungen und Verband-Symposien</a></li>
+                        <li><a class="dropdown-item" href="#fachleiter">FachleiterInnentagungen und Verband-Symposien</a></li>
                         <li><a class="dropdown-item" href="#gesellschaftsabend">Gesellschaftsabend</a></li>
                         <li><a class="dropdown-item" href="#gettogether">Get-Together Abend</a></li>
                     </ul>
@@ -95,7 +94,7 @@ require_once 'functions.php';
                 <li class="nav-item"><a class="nav-link" href="#nachwuchspreis">Nachwuchs-Auszeichnung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#anmeldung">Anmeldung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a></li>
-                <li class="nav-item"><a class="nav-link" href="#anreise & Unterkunft">Anreise & Unterkunft</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anreise-Unterkunft">Anreise &amp; Unterkunft</a></li>
                 <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
@@ -149,33 +148,63 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2 class="text-center">Programm</h2>
         <div class="row text-center mt-3">
-            <div class="col">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <h5>Keynotes</h5>
                 <p>Top-Speaker aus Forschung und Praxis präsentieren neueste Erkenntnisse.</p>
             </div>
-            <div class="col">
-                <h5>Podiumsdiskussion</h5>
-                <p>Diskussion mit ExpertInnen aus der Sportspielpraxis und führenden TrainerInnen zum Thema "Talentsichtung und -förderung in den Sportspielen".</p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5>Podiumsdiskussionen</h5>
+                <p>Diskussion mit ExpertInnen aus der Sportspielpraxis und führenden TrainerInnen zum Thema "Trainerinnen im Sportspiel" und „Talentsichtung und -förderung in den Sportspielen“.</p>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <h5>Arbeitskreise</h5>
                 <p>Arbeitskreise mit Einzelbeiträgen sowie die dvs-Kommissionssitzung Sportspiele.</p>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <h5>Workshops</h5>
                 <p>Praxisworkshops in verschiedenen Sporthallen.</p>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <h5>Posterpräsentation</h5>
-                <p>.</p>
+                <p>Posterpräsentation und Kaffeepausen im Hauptgebäude.</p>
             </div>
-            <div class="col">
-                <h5>FachleiterInnentagungungen und Verband-Symposien</h5>
-                <p>BDFL - Fortbildung<br></p>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5>FachleiterInnentagungen und Verband-Symposien</h5>
+                <p>BDFL - Fortbildung</p>
             </div>
-            <div class="col">
+            <div class="col-md-6 col-lg-3 mb-4">
                 <h5>Gesellschaftsabend</h5>
-                <p>Im Restaurant & Cafeteria Ulrich Türner.</p>
+                <p>Im Restaurant &amp; Cafeteria Ulrich Türner.</p>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <h5>Get-Together Abend</h5>
+                <p>In der Gastronomie des KTHC Stadion Rot-Weiss e.V.</p>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col">
+                 <p>Detailinformationen, wie die Einzelbeiträge der jeweiligen Arbeitskreise (ca. 3-5 thematisch relevante Beiträge), sind für alle Angemeldeten im ConfTool ersichtlich:<br>
+                 <a href="https://www.conftool.net/sportspiel2026/" target="_blank">https://www.conftool.net/sportspiel2026</a></p>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <h5>&nbsp;</h5>
+                <img src="images/zp30_09.png"
+                     class="img-fluid rounded shadow-sm w-100"
+                     alt="Programm 30.09.">
+            </div>
+            <div class="col-lg-10">
+                <h5>&nbsp;</h5>
+                <img src="images/zp01_10.png"
+                     class="img-fluid rounded shadow-sm w-100"
+                     alt="Programm 01.10.">
+            </div>
+            <div class="col-lg-10">
+                <h5>&nbsp;</h5>
+                <img src="images/zp02_10.png"
+                     class="img-fluid rounded shadow-sm w-100"
+                     alt="Programm 02.10.">
             </div>
         </div>
     </div>
@@ -221,7 +250,7 @@ require_once 'functions.php';
                         Gesundheit von Athlet:innen, der Schaffung nachhaltiger Förderstrukturen und der
                         Karriereentwicklung im Olympischen und Paralympischen Sport. In ihrem Vortrag stellt sie
                         ausgewählte Ergebnisse aus einem <a
-                                href="https://www.dshs-koeln.de/institut-fuer-soziologie-und-genderforschung/abteilung-sportsoziologie/forschung/qualift-trainerinnen-qualifizierung-von-frauen-fuer-den-trainerberuf/">BISp-geförderten
+                                href="https://www.dshs-koeln.de/institut-fuer-soziologie-und-genderforschung/abteilung-sportsoziologie/forschung/qualift-trainerinnen-qualifizierung-von-frauen-fuer-den-trainerberuf/" target="_blank">BISp-geförderten
                             Kooperationsprojekt zur Qualifizierung und den Karrierewegen von Trainerinnen im
                             deutschen Spitzensport</a> vor.</p>
                     <p> <strong> Titel ihrer Keynote:
@@ -357,7 +386,7 @@ require_once 'functions.php';
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Gesellschaftsabend</h2>
-        <p>Gesellschaftsabend am 01.10.2026 (19:30 Uhr) im Restaurant & Cafeteria Ulrich Türner.</p>
+        <p>Gesellschaftsabend am 01.10.2026 (19:30 Uhr) im Restaurant &amp; Cafeteria Ulrich Türner.</p>
         <p>Guts-Muths-Weg 1<br>
             50933 Köln</p>
         <p>Das Restaurant befindet sich im selben Gebäudekomplex wie das Hockey- und Judoleistungszentrum und das
@@ -373,7 +402,7 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2>Get-Together Abend</h2>
         <p>Get-Together Abend am 30.09.2026 (ab 20:00 Uhr) - Essen und Getränke auf SelbstzahlerInnenbasis - in der Gastronomie des KTHC Stadion Rot-Weiss e.V.</p>
-        <p>Olympiaweg 9</br>
+        <p>Olympiaweg 9<br>
            50933 Köln</p>
         <p>Die Gastronomie ist fußläufig (ca. 5 Minuten) vom Veranstaltungsort entfernt.</p>
     </div>
@@ -473,11 +502,15 @@ require_once 'functions.php';
                                                <span>&#8226;</span> Poster<br>
                                                <span>&#8226;</span> Praxisworkshop<br></b>
                 </td>
-                <td>Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.</td>
+                <td><span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span><br>
+                    Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.<br>
+                    <span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span><br></td>
+<!--                <td>Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.</td>-->
             </tr>
             <tr>
                 <td class="table-secondary"><b><span>&#8226;</span> Arbeitskreis</b></td>
-                <td>Bitte Vorschläge (inkl. Titel) an: <?= safe_mail('info', 'sportspiel2026', 'de') ?></td>
+                <td><span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span></td>
+<!--                <td>Bitte Vorschläge (inkl. Titel) an: --><?php //= safe_mail('info', 'sportspiel2026', 'de') ?><!--</td>-->
             </tr>
             </tbody>
         </table>
@@ -587,7 +620,7 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2>Veranstaltungsort</h2>
         <h3>Deutsche Sporthochschule Köln</h3>
-        <p><a href="https://www.dshs-koeln.de">Deutsche Sporthochschule Köln</a></p>
+        <p><a href="https://www.dshs-koeln.de" target="_blank">Deutsche Sporthochschule Köln</a></p>
         <div class="mt-3">
             <img src="images/sporthochschule1.jpg" alt="Sporthochschule Bild 1" class="img-fluid rounded shadow mb-3" style="max-width: 100%; height: auto;">
             <img src="images/sporthochschule2.jpg" alt="Sporthochschule Bild 2" class="img-fluid rounded shadow" style="max-width: 100%; height: auto;">
@@ -619,7 +652,7 @@ require_once 'functions.php';
         <p>Vom Kölner Hauptbahnhof mit der Stadtbahn Linie 16 oder 18 bis Neumarkt, dann Linie 1 (Richtung
             Junkersdorf/Weiden), Haltestelle Junkersdorf/Sporthochschule oder Haltestelle RheinEnergieSTADION. Am
             Bahnhof Köln-Deutz steigen Sie direkt in die Stadtbahn Linie 1 (Richtung Junkersdorf/Weiden).</p>
-        <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a href="https://www.dshs-koeln.de/fileadmin/redaktion/Hochschule/Campus_und_Freizeit/Campusplan_DSHS.pdf">Lageplan</a>.
+        <p>Zur weiteren Orientierung nutzen Sie bitte unseren <a href="https://www.dshs-koeln.de/kontakt-anfahrt" target="_blank">Lageplan</a>.
             Um von der Haltestelle Junkersdorf/Sporthochschule auf unseren Campus zu kommen, nutzen Sie bitte die Straße Am Sportpark
             Müngersdorf.
             <!-- Der Fußweg zwischen der Straße Am Römerhof und dem Gebäude mit der Nummer 6 ist derzeit

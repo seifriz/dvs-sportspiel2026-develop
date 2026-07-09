@@ -53,7 +53,7 @@ require_once 'functions.php';
                         <li><a class="dropdown-item" href="index.php#arbeitskreise">Arbeitskreise</a></li>
                         <li><a class="dropdown-item" href="index.php#workshops">Workshops</a></li>
                         <li><a class="dropdown-item" href="index.php#poster">Posterpräsentation</a></li>
-                        <li><a class="dropdown-item" href="index.php#fachleiter">FachleiterInnentagungungen und Verband-Symposien</a></li>
+                        <li><a class="dropdown-item" href="index.php#fachleiter">FachleiterInnentagungen und Verband-Symposien</a></li>
                         <li><a class="dropdown-item" href="index.php#gesellschaftsabend">Gesellschaftsabend</a></li>
                         <li><a class="dropdown-item" href="index.php#gettogether">Get-Together Abend</a></li>
                     </ul>
@@ -63,7 +63,7 @@ require_once 'functions.php';
                 <li class="nav-item"><a class="nav-link" href="index.php#nachwuchspreis">Nachwuchs-Auszeichnung</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#anmeldung">Anmeldung</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#veranstaltungsort">Veranstaltungsort</a></li>
-                <li class="nav-item"><a class="nav-link" href="index.php#anreise & unterkunft">Anreise & Unterkunft</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.php#anreise-unterkunft">Anreise &amp; Unterkunft</a></li>
                 <li class="nav-item"><a class="nav-link" href="index.php#kontakt">Kontakt</a></li>
             </ul>
         </div>
