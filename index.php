@@ -229,7 +229,7 @@ require_once 'functions.php';
                         Spitzensport bestens vertraut. Neben verschiedenen wissenschaftlichen Projekten und
                         Publikationen zum Thema Schiedsrichter im Sport leitete er selbst 16 Jahre Spiele in der 1.
                         Basketballbundesliga der Herren in Deutschland. Seit der Saison 2024-25 ist er für die
-                        easyCredit Basket Ballbundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
+                        easyCredit Basketball Bundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
                         setzt er sich mit SchiedsrichterInnen im Sportspiel auseinander.</p>
                     <p> <strong> Titel seiner Keynote:
                         „Sportwissenschaftlich informierte Leistungsentwicklung im Hochleistungssystem: Beurteilung, Monitoring und Management von Spitzenschiedsrichtern in der easyCredit BBL“ </strong> </p>
