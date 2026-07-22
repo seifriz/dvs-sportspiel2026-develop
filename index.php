@@ -190,19 +190,19 @@ require_once 'functions.php';
         <div class="row justify-content-center">
             <div class="col-lg-10">
                 <h5>&nbsp;</h5>
-                <img src="images/zp30_09.png"
+                <img src="images/programm/zp30_09.png"
                      class="img-fluid rounded shadow-sm w-100"
                      alt="Programm 30.09.">
             </div>
             <div class="col-lg-10">
                 <h5>&nbsp;</h5>
-                <img src="images/zp01_10.png"
+                <img src="images/programm/zp01_10.png"
                      class="img-fluid rounded shadow-sm w-100"
                      alt="Programm 01.10.">
             </div>
             <div class="col-lg-10">
                 <h5>&nbsp;</h5>
-                <img src="images/zp02_10.png"
+                <img src="images/programm/zp02_10.png"
                      class="img-fluid rounded shadow-sm w-100"
                      alt="Programm 02.10.">
             </div>
@@ -229,10 +229,10 @@ require_once 'functions.php';
                         Spitzensport bestens vertraut. Neben verschiedenen wissenschaftlichen Projekten und
                         Publikationen zum Thema Schiedsrichter im Sport leitete er selbst 16 Jahre Spiele in der 1.
                         Basketballbundesliga der Herren in Deutschland. Seit der Saison 2024-25 ist er für die
-                        easyCredit Basketball Bundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
+                        easyCredit Basketball-Bundesliga im Management des BBL-Elitekaders aktiv. In seinem Vortrag
                         setzt er sich mit SchiedsrichterInnen im Sportspiel auseinander.</p>
                     <p> <strong> Titel seiner Keynote:
-                        „Sportwissenschaftlich informierte Leistungsentwicklung im Hochleistungssystem: Beurteilung, Monitoring und Management von Spitzenschiedsrichtern in der easyCredit BBL“ </strong> </p>
+                        „Sportwissenschaftlich informierte Leistungsentwicklung im Hochleistungssystem: Beurteilung, Monitoring und Management von Spitzenschiedsrichtern in der easyCredit Basketball-Bundesliga (BBL)“ </strong> </p>
  
                 </div>
             </div>
@@ -276,6 +276,30 @@ require_once 'functions.php';
 <section id="podium" class="bg-light section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
+
+        <h2>Podiumsdiskussion</h2>
+        <h4>Thema: „Trainerinnen im Sportspiel“</h4>
+        <p>Daran beteiligt sein werden – ergänzend zu ihrer Keynote - Univ.-Prof. Dr. Astrid Schubring sowie:</p>
+        <div class="row people">
+            <div class="col-md-6 col-lg-6 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Nicole_Gögele_320x320.jpg" alt="Nicole Gögele">
+                    <h3 class="name">Nicole Gögele</h3>
+                    <p class="title">Deutscher Golf Verband e.V. (DGV)</p>
+                    <p class="description">Nicole Gögele ist seit über 35 Jahren im Golfsport aktiv. Als Mitglied der Mädchen- und Damen-Nationalmannschaft des Deutschen Golf Verbandes (DGV) gewann sie zahlreiche nationale und internationale Titel. Zu ihren größten Erfolgen zählen der Vizeweltmeistertitel mit der Mannschaft sowie der dritte Platz bei den Mannschafts-Europameisterschaften. Ende 2000 wechselte sie ins Profilager und spielte bis zur Geburt ihres zweiten Kindes im Jahr 2007 auf der Ladies European Tour. Parallel dazu schloss sie 2002 ihr Studium der Politikwissenschaft mit dem Abschluss Diplom-Politologin ab. Anschließend absolvierte sie die Ausbildung zur PGA Golflehrerin und Trainerin und führte gemeinsam mit ihrem Mann eine Golfakademie südlich von München. Von 2015 bis 2021 war Nicole Gögele Co-Bundestrainerin der Frauen beim DGV. Ihre Schwerpunkte lagen in der Betreuung des Übergangs vom Amateur- in den Profibereich sowie im Coaching deutscher Spielerinnen auf der Ladies European Tour. Von 2022 bis 2024 war sie Nationaltrainerin des Österreichischen Golf-Verbandes und verantwortete dort den gesamten weiblichen Leistungssport.
+                        Seit 2025 ist sie Bundestrainerin Frauen/Professionals beim Deutschen Golf Verband. In dieser Funktion begleitet sie deutsche Profispielerinnen auf den internationalen Touren und arbeitet an der Weiterentwicklung der Spitzensportstrukturen im Frauengolf. Parallel absolviert sie das Diplomtrainer-Studium an der Trainerakademie Köln des Deutschen Olympischen Sportbundes. Durch ihre langjährige Erfahrung als internationale Spitzenspielerin und Trainerin verbindet Nicole Gögele sportpraktische Expertise mit sportwissenschaftlichen Erkenntnissen. Ein besonderer Schwerpunkt ihrer Arbeit liegt darin, komplexe Inhalte aus Technik, Trainingswissenschaft und Leistungsentwicklung verständlich und praxisnah in konkrete Coachingstrategien zu übersetzen, um so die Entwicklung von Athletinnen nachhaltig zu unterstützen.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-6 item">
+                <div class="box"><img class="rounded-circle" src="images/podium/Constanze_Wegner_320x320.jpg" alt="Constanze Wegner">
+                    <h3 class="name">Constanze Wegner</h3>
+                    <p class="title">Deutscher Basketball Bund e.V. (DBB)</p>
+                    <p class="description">Constanze Wegner ist aktuell hauptamtliche Bundestrainerin der weiblichen U20-Nationalmannschaft beim Deutschen Basketball Bund DBB.
+                        Zuvor leitete die gebürtige Hamburgerin als Headcoach das Nachwuchs Basketball Bundesliga Team (NBBL) der Hamburg Towers und stand zudem seit 2023 als Co-Trainern des Pro B-Teams SC Rist Wedel an der Seitenlinie. Auch als Spielerin kann Wegner auf eine erfolgreiche Karriere in der 1. und 2. Damen Basketball Bundesliga DBBL zurückblicken.</p>
+                </div>
+            </div>
+        </div>
+
         <h2>Podiumsdiskussion</h2>
 		<h4>Thema: „Talentsichtung und -förderung in den Sportspielen“</h4>
         <p>Daran beteiligt sein werden:</p>
@@ -306,7 +330,7 @@ require_once 'functions.php';
                 </div>
             </div>
             <div class="col-md-6 col-lg-3 item">
-                <div class="box"><img class="rounded-circle" src="images/podium/Leonie Wagner_320x320.jpg" alt="Leonie Wagner">
+                <div class="box"><img class="rounded-circle" src="images/podium/Leonie_Wagner_320x320.jpg" alt="Leonie Wagner">
                     <h3 class="name">Leonie Wagner</h3>
                     <p class="title"></p>
                     <p class="title">Deutscher Kanu-Verband e.V. (DKV)</p>
