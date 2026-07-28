@@ -94,7 +94,7 @@ require_once 'functions.php';
                 <li class="nav-item"><a class="nav-link" href="#nachwuchspreis">Nachwuchs-Auszeichnung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#anmeldung">Anmeldung</a></li>
                 <li class="nav-item"><a class="nav-link" href="#veranstaltungsort">Veranstaltungsort</a></li>
-                <li class="nav-item"><a class="nav-link" href="#anreise-Unterkunft">Anreise &amp; Unterkunft</a></li>
+                <li class="nav-item"><a class="nav-link" href="#anreise_unterkunft">Anreise &amp; Unterkunft</a></li>
                 <li class="nav-item"><a class="nav-link" href="#kontakt">Kontakt</a></li>
             </ul>
         </div>
@@ -653,7 +653,7 @@ require_once 'functions.php';
 </section>
 
 <!-- Anreise Section -->
-<section id="anreise & Unterkunft" class="section-padding">
+<section id="anreise_unterkunft" class="section-padding">
     <div class="container text-center">
         <h1>&nbsp;</h1>
         <h2>Anreise</h2>
