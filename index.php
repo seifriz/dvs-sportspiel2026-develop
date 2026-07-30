@@ -527,7 +527,7 @@ require_once 'functions.php';
                                                <span>&#8226;</span> Praxisworkshop<br></b>
                 </td>
                 <td><span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span><br>
-                    Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.<br>
+                <td><span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span><br>
                     <span style="color: red; font-weight: bold;">(Einreichung geschlossen!)</span><br></td>
 <!--                <td>Bitte diese <a href="\template\Abstract-Vorlage_14.SportspielSymposium_dvs_2026.docx">Abstract-Vorlage</a> nutzen und per <a href="https://www.conftool.net/sportspiel2026" target="_blank">ConfTool</a> einreichen.</td>-->
             </tr>
