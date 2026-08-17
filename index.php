@@ -109,7 +109,7 @@ require_once 'functions.php';
         <h1 class="display-1">14. Sportspiel-Symposium der dvs</h1>
         <p class="fs-2">„SPIEL - <b>S</b>portspiel | <b>P</b>raxis | <b>I</b>nnovationen | <b>E</b>rkenntnisse | <b>L</b>eistungen“</p>
         <p class="fs-1">30.09. – 02.10.2026 | Deutsche Sporthochschule Köln</p>
-        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>
+<!--        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>-->
     </div>
 </header>
 
