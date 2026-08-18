@@ -634,7 +634,7 @@ require_once 'functions.php';
             </tbody>
         </table>
 
-        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>
+<!--        <a href="https://www.conftool.net/sportspiel2026" class="btn btn-primary btn-lg mt-3" target="_blank">Jetzt anmelden</a>-->
     </div>
 </section>
 
