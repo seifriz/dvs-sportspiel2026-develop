@@ -265,7 +265,7 @@ require_once 'functions.php';
                         Talent im Sport, Expertise in der Lebensspanne und Wahrnehmung im Sport und in der Schule. Im Rahmen seiner Sportspielforschung kooperiert er mit dem Deutschen Handballbund,
                         dem Deutschen Tischtennisbund und dem Deutschen Curling Verband. </p>
                     <p> <strong> Titel seiner Keynote:
-                        „Talent im Sportspiel – Praxis, Innovationen und Erkenntnisse“ </strong> </p>
+                        „Talent im Sportspiel – Selektionen bedingen Entscheidungen“ </strong> </p>
                 </div>
             </div>
         </div>
