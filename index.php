@@ -79,6 +79,7 @@ require_once 'functions.php';
                     <a class="nav-link dropdown-toggle" href="#programm" role="button" data-bs-toggle="dropdown" aria-expanded="false">Programm</a>
                     <ul class="dropdown-menu">
                         <li><a class="dropdown-item" href="#uberblick">Überblick</a></li>
+                        <li><a class="dropdown-item" href="#abstractband">Abstractband</a></li>
                         <li><a class="dropdown-item" href="#keynotes">Keynotes</a></li>
                         <li><a class="dropdown-item" href="#podium">Podiumsdiskussionen</a></li>
                         <li><a class="dropdown-item" href="#arbeitskreise">Arbeitskreise</a></li>
@@ -206,6 +207,17 @@ require_once 'functions.php';
                      class="img-fluid rounded shadow-sm w-100"
                      alt="Programm 02.10.">
             </div>
+        </div>
+    </div>
+</section>
+
+<!-- Abstractband Section -->
+<section id="abstractband" class="bg-light section-padding">
+    <div class="container text-center">
+        <h1>&nbsp;</h1>
+        <h2>Abstractband</h2>
+        <p>Hier kann der Abstractband zum 14. Sportspiel-Symposium der dvs heruntergeladen werden.</p>
+        <a href="https://www.sportspiel2026.de/dl/Abstractband 14. Sportspielsymposium der dvs.pdf" class="btn btn-primary btn-lg mt-3" target="_blank" download">Download</a></p>
         </div>
     </div>
 </section>
