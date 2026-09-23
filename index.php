@@ -217,7 +217,7 @@ require_once 'functions.php';
         <h1>&nbsp;</h1>
         <h2>Abstractband</h2>
         <p>Hier kann der Abstractband zum 14. Sportspiel-Symposium der dvs heruntergeladen werden.</p>
-        <a href="https://www.sportspiel2026.de/dl/Abstractband 14. Sportspielsymposium der dvs.pdf" class="btn btn-primary btn-lg mt-3" target="_blank" download">Download</a></p>
+        <a href="https://www.sportspiel2026.de/dl/Abstractband 14. Sportspielsymposium der dvs.pdf" class="btn btn-primary btn-lg mt-3" target="_blank" download>Download</a>
     </div>
 </section>
 
